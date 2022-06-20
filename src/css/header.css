@@ -1,0 +1,124 @@
+header {
+  height: 36px;
+  background-color: #F5F5F5;
+}
+header .header-left:hover {
+  color: #ff8000;
+}
+header .header-left .address-icon {
+  float: left;
+  width: 12px;
+  height: 15px;
+  margin: 10px 6px 0 6px;
+  background: url(../img/sn-jinglingtu.png) -387px -183px;
+}
+header .header-left > a {
+  color: #666;
+  font-size: 12px;
+  line-height: 36px;
+  display: inline-block;
+  height: 100%;
+  text-align: left;
+  position: relative;
+  top: 0;
+  float: left;
+  padding: 0 10px;
+  border: 1px solid transparent;
+}
+header .header-left > a:hover {
+  color: #ff8000;
+}
+header .header-mid > a {
+  position: relative;
+  top: 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: left;
+  float: left;
+  margin-left: 160px;
+  margin-right: 5px;
+}
+header .header-mid > a:hover {
+  color: #ff8000;
+}
+header .header-mid > .login {
+  display: inline-block;
+  width: 36px;
+}
+header .header-right > a {
+  position: relative;
+  top: 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 36px;
+  display: inline-block;
+  height: 100%;
+  text-align: left;
+  float: left;
+  padding: 0 10px;
+  border: 1px solid transparent;
+}
+header .header-right > a:hover {
+  color: #ff8000;
+}
+header .header-mid > .login-l {
+  display: inline-block;
+  width: 48px;
+  margin-left: 10px;
+}
+header .header-active {
+  color: #ff6600 !important;
+}
+header .header-active-hover:hover {
+  color: #ff6600 !important;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  box-sizing: border-box;
+}
+header .content-hover {
+  position: absolute;
+  top: 36px;
+  background-color: #fff;
+  width: 988px;
+  padding: 20px 0;
+  left: 0;
+  left: auto;
+  border: 1px solid #ccc;
+  border-top: 0;
+  z-index: 10;
+  display: none;
+}
+header .content-hover .dl-list {
+  float: left;
+  width: 176px;
+  border-right: 1px solid #eee;
+  padding-left: 20px;
+}
+header .content-hover .dl-list dt {
+  height: 25px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Microsoft Yahei";
+  line-height: 17px;
+}
+header .content-hover .dl-list dt a {
+  color: #666;
+}
+header .content-hover .dl-list dd {
+  width: 100%;
+}
+header .content-hover .dl-list dd p {
+  float: left;
+  height: 25px;
+  width: 78px;
+  line-height: 25px;
+}
+header .content-hover .dl-list dd p a {
+  color: #666;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+}

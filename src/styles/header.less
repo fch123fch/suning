@@ -1,0 +1,163 @@
+@sn-color: #ff6600;
+@font-color: #666;
+@sn-color-light: #ff8000;
+header {
+  height: 36px;
+  background-color: #F5F5F5;
+
+  .header-left {
+    &:hover {
+      color: @sn-color-light;
+    }
+    .address-icon{
+      float: left;
+    width: 12px;
+    height: 15px;
+    margin: 10px 6px 0 6px;
+    background: url(../img/sn-jinglingtu.png) -387px -183px;
+    }
+   
+  }
+
+  .header-left>a {
+    color: #666;
+    font-size: 12px;
+    line-height: 36px;
+    display: inline-block;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    top: 0;
+    float: left;
+    padding: 0 10px;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: @sn-color-light;
+    }
+
+  }
+
+  // .header-right-r{
+  //   // float: right;
+  // }
+  .header-mid>a {
+    position: relative;
+    top: 0;
+    color: #666;
+    font-size: 12px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    margin-left: 160px;
+    margin-right: 5px;
+
+    //    padding: 0 10px;
+    // overflow: hidden;
+    &:hover {
+      color: @sn-color-light;
+    }
+  }
+
+  .header-mid>.login {
+    display: inline-block;
+    width: 36px;
+  }
+
+  .header-right>a {
+    position: relative;
+    top: 0;
+    color: #666;
+    font-size: 12px;
+    line-height: 36px;
+    display: inline-block;
+    height: 100%;
+    text-align: left;
+    float: left;
+    padding: 0 10px;
+    // overflow: hidden;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: @sn-color-light;
+    }
+  }
+
+  .header-mid>.login-l {
+    display: inline-block;
+    width: 48px;
+    margin-left: 10px;
+  }
+
+  //  默认hover效果
+  .header-active {
+    color: #ff6600 !important;
+  }
+
+  // 下拉菜单
+  .header-active-hover:hover {
+    color: #ff6600 !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  // .header-active-hover:hover .content-hover{
+  //   display: block
+  // };
+  .content-hover {
+    position: absolute;
+    top: 36px;
+    background-color: #fff;
+    width: 988px;
+    padding: 20px 0;
+    left: 0;
+    left: auto;
+    border: 1px solid #ccc;
+    border-top: 0;
+    z-index: 10;
+    display: none;
+    // .close{
+
+    // }
+
+    .dl-list {
+      float: left;
+      width: 176px;
+      border-right: 1px solid #eee;
+      padding-left: 20px;
+
+      dt {
+        height: 25px;
+        width: 100%;
+        font-size: 14px;
+        font-family: "Microsoft Yahei";
+        line-height: 17px;
+
+        a {
+          color: #666;
+        }
+      }
+
+      dd {
+        width: 100%;
+
+        p {
+          float: left;
+          height: 25px;
+          width: 78px;
+          line-height: 25px;
+
+          a {
+            color: #666;
+            position: relative;
+            display: inline-block;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

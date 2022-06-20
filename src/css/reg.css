@@ -1,0 +1,484 @@
+footer {
+  background: #FFF;
+  width: 100%;
+  height: 210px;
+  /* min-width: 990px; */
+  text-align: center;
+}
+footer .sn-footer-first {
+  width: 100%;
+  background: #f5f5f5;
+  border-top: 1px solid #e7e7e7;
+  padding: 0 0 10px;
+}
+footer .sn-footer-first .promise-box {
+  padding: 12px 0;
+  height: 73px;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+}
+footer .sn-footer-first .promise-box .li-box {
+  width: 230px;
+  float: left;
+  position: relative;
+}
+footer .sn-footer-first .promise-box .li-box img {
+  float: left;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+footer .sn-footer-first .promise-box div {
+  width: 100%;
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+footer .sn-footer-first .promise-box div a {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer .sn-footer-first .promise-box div a:hover {
+  color: #ff6600;
+}
+footer .sn-footer-first .promise-box div a:hover {
+  color: #f60;
+}
+footer .sn-footer-first .promise-box div p {
+  width: 120px;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 26px;
+  left: 90px;
+  font-size: 12px;
+  color: #545454;
+  text-align: left;
+}
+footer .sn-footer-first .help-box {
+  position: relative;
+  width: 1050px;
+  height: 180px;
+}
+footer .sn-footer-first .help-box dl:last-child {
+  position: absolute;
+  top: 0px;
+  right: -200px;
+}
+footer .sn-footer-first .help-box dl {
+  float: left;
+  height: 160px;
+  width: 210px;
+  text-align: left;
+}
+footer .sn-footer-first .help-box dl dt {
+  width: 100%;
+  line-height: 40px;
+  font-weight: 700;
+  color: #545454;
+  height: 35px;
+  font-size: 14px;
+  overflow: hidden;
+}
+footer .sn-footer-first .help-box dl dd {
+  width: 100%;
+  line-height: 22px;
+}
+footer .sn-footer-first .help-box dl dd a {
+  color: #545454;
+  font-size: 12px;
+}
+footer .sn-footer-first .help-box dl dd a:hover {
+  color: #ff6600;
+}
+footer .sn-footer-first .help-box dl dd a:hover {
+  color: #f60;
+}
+footer .sn-footer {
+  padding: 10px 0 0 ;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 auto;
+}
+footer .sn-footer p a:hover {
+  color: #ff6600;
+}
+footer .sn-footer span {
+  color: #888;
+  padding: 0 4px;
+}
+footer .sn-footer .list-1 {
+  height: 25px;
+  line-height: 25px;
+}
+footer .sn-footer .list-1 a {
+  color: #666;
+  font-size: 12px;
+}
+footer .sn-footer .list-2 {
+  line-height: 25px;
+  height: 25px;
+  width: 1190px;
+  float: left;
+  color: #999;
+  font-size: 12px;
+}
+footer .sn-footer .list-2 a {
+  color: #999;
+  font-size: 12px;
+}
+footer .sn-footer .list-2 .gongan {
+  position: relative;
+}
+footer .sn-footer .list-2 .gongan .jinhui {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/gwab-icon.png) 0 0 no-repeat;
+}
+footer .sn-footer .f-img {
+  height: 25px;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+footer .sn-footer .f-img a {
+  display: inline-block;
+  margin-right: 8px;
+  height: 100%;
+}
+footer .sn-footer .f-img a img {
+  height: 100%;
+}
+footer .sn-fix-nav {
+  min-width: 1190px;
+  position: sticky;
+  /* display: none; */
+  height: 50px;
+  width: 100%;
+  /* min-width: 990px; */
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+  left: 0;
+  top: 500px;
+  opacity: 0.95;
+}
+.index-header .header-con {
+  width: 970px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+.index-header .logo-set {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.index-header .logo-box > a > img {
+  width: 190px;
+  height: 90px;
+}
+.index-header .header-right {
+  margin-left: 189px;
+  padding: 37px 0 0 16px;
+  position: relative;
+}
+.index-header .header-right .logo-text {
+  float: left;
+  font-size: 18px;
+  color: #666;
+  line-height: 88px;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+.index-header .header-right .logo-text a {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+.index-header .header-right .message {
+  float: right;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+}
+.index-header .header-right .message:hover {
+  color: #ff6600;
+}
+.index-header .header-right .message:hover {
+  color: #f60;
+}
+.main {
+  margin: 0 auto;
+  min-width: 970px;
+  height: 446px;
+  box-sizing: border-box;
+  width: 999px;
+  border: 1px solid #ddd;
+  border-top: 3px solid #ff6600;
+  padding: 55px 0;
+  line-height: 1.5;
+}
+.main .login-form {
+  float: right;
+  position: relative;
+  top: 0;
+  left: -295px;
+  background: #fff;
+  right: 230px;
+}
+.main .login-form .login-tab {
+  height: 50px;
+  line-height: 20px;
+  font-size: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+}
+.main .login-form .login-tab a {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 50%;
+  text-decoration: none;
+  text-align: center;
+}
+.main .login-form .login-tab a span {
+  display: block;
+  border-right: 1px solid #eee;
+  margin-top: 15px;
+  color: #333;
+}
+.main .login-form .login-tab a span:hover {
+  color: #ff6600;
+}
+.main .login-form .login-tab a span:hover {
+  color: #f60;
+}
+.main .login-form .login-tab a i {
+  display: none;
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background: #f60;
+  bottom: -1px;
+  left: 50%;
+  margin-left: -35px;
+}
+.main .login-form .login-main .username-login {
+  position: relative;
+  clear: both;
+}
+.main .login-form .login-main .username-login .gift {
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 2px;
+  margin-bottom: 17px;
+}
+.main .login-form .login-main .username-login .gift i {
+  float: left;
+  width: 19px;
+  height: 17px;
+  margin-right: 6px;
+  background: url(../img/sprite2.png) -75px -93px no-repeat;
+}
+.main .login-form .login-main .username-login .gift em {
+  color: #f40;
+}
+.main .login-form .login-main .username-login .username-box,
+.main .login-form .login-main .username-login .password-box {
+  position: relative;
+  clear: both;
+}
+.main .login-form .login-main .username-login .username-box p,
+.main .login-form .login-main .username-login .password-box p {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 12px;
+  color: #000;
+  z-index: 10;
+  text-indent: 10px;
+}
+.main .login-form .login-main .username-login .username-box .input-box,
+.main .login-form .login-main .username-login .password-box .input-box {
+  position: relative;
+  border: 1px solid #ddd;
+  color: #999;
+  padding: 0 32px 0 36px;
+  overflow: hidden;
+  margin-top: 20px;
+  height: 38px;
+  border: 1px solid #ccc;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+.main .login-form .login-main .username-login .username-box .input-box input,
+.main .login-form .login-main .username-login .password-box .input-box input {
+  display: block;
+  width: 291px;
+  height: 100%;
+  line-height: 36px;
+  padding: 0 32px 0 36px;
+  border: 0;
+  font-size: 14px;
+  margin-left: -36px;
+  text-indent: 50px;
+}
+.main .login-form .login-main .username-login .username-box .input-box input::-webkit-input-placeholder,
+.main .login-form .login-main .username-login .password-box .input-box input::-webkit-input-placeholder {
+  font-size: 12px;
+  cursor: text;
+  background: #fff;
+  color: #cacaca;
+}
+.main .login-form .login-main .username-login .username-box .input-box label,
+.main .login-form .login-main .username-login .password-box .input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  cursor: text;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  color: #cacaca;
+}
+.main .login-form .login-main .username-login .username-box .input-box .username-icon,
+.main .login-form .login-main .username-login .password-box .input-box .username-icon {
+  background: url(../img/sprite.png) -123px -67px no-repeat;
+}
+.main .login-form .login-main .username-login .username-box .input-box .icon,
+.main .login-form .login-main .username-login .password-box .input-box .icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .login-form .login-main .username-login .username-box .input-box .password-icon,
+.main .login-form .login-main .username-login .password-box .input-box .password-icon {
+  background: url(../img/sprite.png) 0 -108px no-repeat;
+}
+.main .login-form .login-main .username-login .login-help {
+  line-height: 35px;
+  height: 35px;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+.main .login-form .login-main .username-login .login-help .login-switch {
+  float: left;
+  text-decoration: none;
+  color: #333;
+}
+.main .login-form .login-main .username-login .login-help i {
+  display: inline-block;
+  width: 13px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: -3px;
+  background: url(../img/sprite.png) -21px -149px no-repeat;
+}
+.main .login-form .login-main .username-login .login-help a {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+  float: right;
+}
+.main .login-form .login-main .username-login .login-help a:hover {
+  color: #ff6600;
+}
+.main .login-form .login-main .username-login .login-help a:hover {
+  color: #f60;
+}
+.main .login-form .login-main .username-login .login-submit {
+  display: block;
+  width: 393px;
+  line-height: 40px;
+  margin: 0 auto;
+  background: #f60;
+  border-radius: 2px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+}
+.main .login-form .free-reg {
+  text-align: center;
+  margin: 12px 0 35px;
+}
+.main .login-form .free-reg a {
+  font-size: 12px;
+  color: #ff6600;
+}
+.main .login-form .free-reg a:hover {
+  text-decoration: underline;
+}
+.main .login-form .bind-login {
+  position: relative;
+  width: 310px;
+  margin: 0 auto;
+  border-top: 1px solid #ddd;
+  padding: 19px 0 17px;
+  font-size: 12px;
+}
+.main .login-form .bind-login .title {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  margin-left: -64px;
+  color: #999;
+  width: 128px;
+  background: #fff;
+  text-align: center;
+}
+.main .login-form .bind-login .common a {
+  float: left;
+  padding: 0 7px;
+  border-right: 1px solid #dedcd5;
+  line-height: 16px;
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+.main .login-form .bind-login .common a:hover {
+  color: #ff6600;
+}
+.main .login-form .bind-login .common a:hover {
+  color: #f60;
+}
+.main .login-form .bind-login .common a i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.main .login-form .bind-login .common .qq i {
+  background: url(../img/sprite.png) -140px -108px no-repeat;
+}
+.main .login-form .bind-login .common .weixin i {
+  background: url(../img/sprite.png) -90px -27px no-repeat;
+}
+.main .login-form .bind-login .common .yfb i {
+  background: url(../img/sprite.png) -119px -108px no-repeat;
+}
+.main .login-form .bind-login .common .weibo i {
+  background: url(../img/sprite.png) 0 -149px no-repeat;
+}

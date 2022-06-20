@@ -1,0 +1,142 @@
+.recommforyou {
+  background-color: #f2f2f2;
+  height: 920px;
+}
+.recommforyou .title-pic {
+  height: 80px;
+  display: block;
+  width: 100%;
+}
+.recommforyou .tab-nav {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+.recommforyou .tab-nav li {
+  float: left;
+  height: 70px;
+  width: 170px;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 6px;
+  cursor: pointer;
+}
+.recommforyou .tab-nav li:hover .text,
+.recommforyou .tab-nav li:hover .sub-text {
+  color: #ff6600;
+}
+.recommforyou .tab-nav li .text {
+  position: relative;
+  font-size: 17px;
+  font-weight: bold;
+  height: 24px;
+  letter-spacing: 0.5px;
+  color: #333;
+  line-height: 24px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  display: inline-block;
+}
+.recommforyou .tab-nav li .text img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+.recommforyou .tab-nav li .sub-text {
+  font-size: 14px;
+  height: 26px;
+  color: #999;
+  line-height: 26px;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+.recommforyou .tab-content ul {
+  margin-right: -10px;
+}
+.recommforyou .tab-content ul li {
+  width: 230px;
+  margin: 0 10px 10px 0;
+  position: relative;
+  float: left;
+  height: 350px;
+  background: #fff;
+  border-radius: 6px;
+}
+.recommforyou .tab-content ul li:hover a {
+  box-shadow: 3px 3px 3px #ccc;
+}
+.recommforyou .tab-content ul li:hover .title {
+  color: #ff8000;
+}
+.recommforyou .tab-content ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.recommforyou .tab-content ul li a img {
+  width: 230px;
+  height: 230px;
+  margin: 0 0 10px;
+  display: block;
+  border-radius: 6px 6px 0 0;
+}
+.recommforyou .tab-content ul li a .title {
+  width: 202px;
+  height: 40px;
+  margin: 0 0 8px 14px;
+  overflow: hidden;
+  color: #333;
+  font: 14px/20px 'Microsoft Yahei', tahoma, arial, 'Hiragino Sans GB';
+  word-break: break-all;
+}
+.recommforyou .tab-content ul li .price-box {
+  position: absolute;
+  height: 28px;
+  bottom: 10px;
+  left: 14px;
+}
+.recommforyou .tab-content ul li .price-box .price {
+  line-height: 28px;
+  color: #f30;
+  font-size: 20px;
+  font-weight: bold;
+}
+.recommforyou .tab-content ul li .price-box .price i {
+  font-size: 14px;
+}
+.recommforyou .tab-content ul li .price-box .reprice {
+  font-size: 13px;
+  line-height: 18px;
+  color: #999;
+  margin-left: 6px;
+  text-decoration: line-through;
+}
+.recommforyou .tab-content ul li .cx-icon {
+  position: relative;
+  width: 190px;
+  height: 18px;
+  margin-left: 14px;
+  overflow: hidden;
+}
+.recommforyou .tab-content ul li .cx-icon span {
+  position: relative;
+  zoom: 1;
+  display: block;
+  float: left;
+  padding: 0 2px;
+  height: 16px;
+  color: #ff8000;
+  font: 14px/16px 'Microsoft Yahei', tahoma, arial, 'Hiragino Sans GB';
+  background: #fff;
+  border: 1px solid #ff8000;
+  margin-right: 7px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}

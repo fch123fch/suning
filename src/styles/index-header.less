@@ -1,0 +1,114 @@
+@sn-color: #ff6600;
+@font-color: #666;
+@sn-color-light: #ff8000;
+.index-header {
+  .header-con {
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .logo-set {
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+  .logo-box>a>img {
+    width: 190px;
+    height: 90px;
+  }
+
+  .header-search {
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    height: 100px;
+    width: 600px;
+    top: 0;
+    left: 300px;
+
+    .ng-search {
+      position: absolute;
+      height: 100px;
+      width: 600px;
+      top: 0;
+      z-index: 8;
+
+      .g-search {
+        display: inline;
+        position: relative;
+        float: right;
+        width: 540px;
+        margin: 30px 0 0 0;
+        z-index: 6790;
+        font-family: 'Microsoft YaHei';
+      }
+    }
+
+    .input-search {
+      width: 400px;
+      height: 36px;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      float: left;
+      padding: 0 0 0 28px;
+      border: 2px solid #ff8000;
+      border-right: 0;
+
+      >span {
+        display: block;
+        color: #bbb;
+        font-size: 12px;
+        background: #fff;
+        height: 100%;
+        line-height: 36px;
+        width: 380px;
+      }
+    }
+
+    .search-submit {
+      width: 110px;
+      height: 40px;
+      background-color: #ff8000;
+      border-radius: 0;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      font-size: 18px;
+      padding: 0;
+      font-family: 'MicroSoft YaHei';
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-indent: 2px;
+      color: #FFF;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .search-bottom-content {
+      position: absolute;
+      bottom: 7px;
+      left: 55px;
+
+      .border-left {
+        border-left: 1px solid #ccc;
+      }
+
+      a {
+        display: inline-block;
+        color: #666;
+        font-size: 12px;
+        padding: 0 7px;
+
+        &:hover {
+          color: @sn-color;
+        }
+      }
+
+      .font-active {
+        color: #ff6600;
+      }
+    }
+
+  }
+}

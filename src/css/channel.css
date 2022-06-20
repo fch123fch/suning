@@ -1,0 +1,182 @@
+.channel {
+  height: 654px;
+  background-color: #f2f2f2;
+}
+.channel .modules:nth-child(3n) {
+  margin-right: 0;
+}
+.channel .title-pic {
+  height: 80px;
+  display: block;
+  width: 100%;
+}
+.channel .modules {
+  margin-top: 10px;
+  width: 590px;
+  height: 280px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 0 0 30px;
+  float: left;
+  margin-right: 7px;
+}
+.channel .modules .title {
+  height: 60px;
+  text-align: center;
+  font-size: 24px;
+  padding: 0 10px;
+  position: relative;
+}
+.channel .modules .title img {
+  display: block;
+  width: 106px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.channel .modules .title .goods-q {
+  color: #999;
+  display: inline-block;
+  width: 82px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 135px;
+}
+.channel .modules .title .goods-q:hover {
+  color: #ff6600;
+}
+.channel .modules .title .quan {
+  float: left;
+  height: 37px;
+  margin: 10px 0 0 16px;
+  overflow: hidden;
+  font-weight: bold;
+  color: #000;
+}
+.channel .modules .title .quan:hover {
+  color: #ff6600;
+}
+.channel .modules .title .q-quan {
+  margin-top: 5px;
+}
+.channel .modules ul li {
+  float: left;
+  width: 170px;
+  height: 238px;
+  margin-left: 20px;
+}
+.channel .modules ul li span {
+  display: block;
+  color: #999;
+  font-size: 12px;
+}
+.channel .modules ul li:hover .goods {
+  opacity: 0.8;
+}
+.channel .modules ul li:hover p {
+  color: #ff6600;
+}
+.channel .modules ul li .juhuijia {
+  float: left;
+  width: 54px;
+  height: 18px;
+  margin: 2px 5px 0 0;
+  border-radius: 0;
+  display: block;
+}
+.channel .modules ul li .goods {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 10px 10px 10px;
+  border-radius: 6px;
+}
+.channel .modules ul li p {
+  width: 170px;
+  height: 20px;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: left;
+  word-break: break-all;
+  font-weight: normal;
+}
+.channel .modules ul li .po-box {
+  position: relative;
+}
+.channel .modules ul li .po-box .bg-box {
+  position: absolute;
+  width: 168px;
+  height: 68px;
+  background: url(../img/quan3.png);
+  background-size: 100% 100%;
+}
+.channel .modules ul li .po-box .text-1,
+.channel .modules ul li .po-box .text-2,
+.channel .modules ul li .po-box .text-3 {
+  position: absolute;
+  text-align: center;
+}
+.channel .modules .zb li {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  width: 170px;
+  height: 194px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.channel .modules .zb li:hover p {
+  color: #fff;
+}
+.channel .modules .zb li:hover .code {
+  display: block;
+}
+.channel .modules .zb li img {
+  display: block;
+  width: 160px;
+  height: 100%;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.channel .modules .zb li p {
+  position: absolute;
+  width: 160px;
+  height: 46px;
+  line-height: 66px;
+  left: 5px;
+  bottom: 0;
+  font-size: 14px;
+  color: #fff;
+  text-indent: 8px;
+  border-radius: 6px;
+}
+.channel .modules .zb li .code {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.channel .modules .zb li .code .code-img {
+  width: 120px;
+  height: 120px;
+  margin: 24px 27px 0px;
+}
+.channel .modules .zb li .code .code-text {
+  text-align: center;
+  font: 14px/20px 'Microsoft Yahei', tahoma, arial, 'Hiragino Sans GB';
+  color: #fff;
+}
+.channel .channel-box {
+  width: 390px;
+  height: 245px;
+}

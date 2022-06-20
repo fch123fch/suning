@@ -1,0 +1,397 @@
+@import './footer.less';
+
+.hover() {
+  &:hover {
+    color: #f60;
+  }
+}
+
+.line-hover() {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.index-header {
+  .header-con {
+    width: 970px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .logo-set {
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+  .logo-box>a>img {
+    width: 190px;
+    height: 90px;
+  }
+
+  .header-right {
+    margin-left: 189px;
+    padding: 37px 0 0 16px;
+    position: relative;
+
+    .logo-text {
+      float: left;
+      font-size: 18px;
+      color: #666;
+      line-height: 88px;
+      // margin-left: 20px;
+      position: absolute;
+      top: 15px;
+      left: 30px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+
+    .message {
+      float: right;
+      margin-top: 8px;
+      text-decoration: none;
+      color: #333;
+      font-size: 12px;
+      .hover();
+      position: absolute;
+      bottom: -50px;
+      right: 0px;
+    }
+  }
+}
+
+.main {
+  margin: 0 auto;
+  min-width: 970px;
+  height: 446px;
+  box-sizing: border-box;
+  // background: url(../img/bg.jpg) center no-repeat;
+  width: 999px;
+  border: 1px solid #ddd;
+  border-top: 3px solid #ff6600;
+  padding: 55px 0;
+  line-height: 1.5;
+
+  .login-form {
+    float: right;
+    position: relative;
+    top: 0;
+    left: -295px;
+    // margin-top: 50px;
+    background: #fff;
+    right: 230px;
+    // box-shadow: 0 0 2px #ececec;
+
+
+    .login-tab {
+      height: 50px;
+      line-height: 20px;
+      font-size: 16px;
+      overflow: hidden;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 40px;
+
+
+      a {
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 50%;
+        text-decoration: none;
+        text-align: center;
+
+        span {
+          display: block;
+          border-right: 1px solid #eee;
+          margin-top: 15px;
+          color: #333;
+          .hover();
+        }
+
+        i {
+          display: none;
+          position: absolute;
+          width: 70px;
+          height: 4px;
+          background: #f60;
+          bottom: -1px;
+          left: 50%;
+          margin-left: -35px;
+        }
+      }
+    }
+
+    .login-main {
+      .username-login {
+        // padding: 0 24px;
+        position: relative;
+        clear: both;
+
+        .gift {
+          font-size: 14px;
+          line-height: 17px;
+          padding-left: 2px;
+          margin-bottom: 17px;
+
+          i {
+            float: left;
+            width: 19px;
+            height: 17px;
+            margin-right: 6px;
+            background: url(../img/sprite2.png) -75px -93px no-repeat;
+          }
+          em{
+            color: #f40;
+          }
+        }
+
+        .username-box,
+        .password-box {
+          // padding: 0 24px;
+          position: relative;
+          clear: both;
+
+          p {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            font-size: 12px;
+            color: #000;
+            z-index: 10;
+            text-indent: 10px;
+          }
+
+          .input-box {
+            position: relative;
+            border: 1px solid #ddd;
+            color: #999;
+            padding: 0 32px 0 36px;
+            // height: 36px;
+            overflow: hidden;
+            margin-top: 20px;
+            // width: 378px;
+            height: 38px;
+            border: 1px solid #ccc;
+            line-height: 38px;
+            margin-bottom: 30px;
+
+
+            input {
+              display: block;
+              width: 291px;
+              height: 100%;
+              line-height: 36px;
+              padding: 0 32px 0 36px;
+              border: 0;
+              font-size: 14px;
+              margin-left: -36px;
+              text-indent: 50px;
+            }
+
+            input::-webkit-input-placeholder {
+              font-size: 12px;
+              cursor: text;
+              background: #fff;
+              // width: 100%;
+              // height: 100%;
+              color: #cacaca;
+            }
+
+            label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              // width: 100%;
+              padding-left: 36px;
+              line-height: 36px;
+              font-size: 12px;
+              cursor: text;
+              background: #fff;
+              width: 100%;
+              height: 100%;
+              color: #cacaca;
+
+            }
+
+            .username-icon {
+              background: url(../img/sprite.png) -123px -67px no-repeat;
+            }
+
+            .icon {
+              display: block;
+              width: 36px;
+              height: 36px;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+
+            .password-icon {
+              background: url(../img/sprite.png) 0 -108px no-repeat;
+            }
+
+            // .clear {
+            //   display: none;
+            //   width: 32px;
+            //   height: 36px;
+            //   position: absolute;
+            //   top: 0;
+            //   right: 0;
+            //   background: url(../image/sprite.png?v=1541648459319) -82px -108px no-repeat;
+            //   cursor: pointer;
+            // }
+          }
+        }
+
+        .login-help {
+          line-height: 35px;
+          height: 35px;
+          padding: 10px;
+          font-size: 12px;
+          margin-top: 30px;
+
+          .login-switch {
+            float: left;
+            text-decoration: none;
+            color: #333;
+          }
+
+          i {
+            display: inline-block;
+            width: 13px;
+            height: 16px;
+            margin-right: 5px;
+            vertical-align: -3px;
+            background: url(../img/sprite.png) -21px -149px no-repeat;
+          }
+
+          a {
+            color: #333;
+            text-decoration: none;
+            outline: 0;
+            float: right;
+            .hover();
+          }
+        }
+
+        .login-submit {
+          display: block;
+          width: 393px;
+          line-height: 40px;
+          margin: 0 auto;
+          background: #f60;
+          border-radius: 2px;
+          font-size: 20px;
+          // font-weight: 700;
+          text-align: center;
+          color: #fff;
+          margin-top: 80px;
+        }
+      }
+    }
+
+    .free-reg {
+      text-align: center;
+      margin: 12px 0 35px;
+
+      a {
+        font-size: 12px;
+        color: #ff6600;
+        .line-hover();
+      }
+    }
+
+    .bind-login {
+      position: relative;
+      width: 310px;
+      margin: 0 auto;
+      border-top: 1px solid #ddd;
+      padding: 19px 0 17px;
+      font-size: 12px;
+
+      .title {
+        position: absolute;
+        top: -9px;
+        left: 50%;
+        margin-left: -64px;
+        color: #999;
+        width: 128px;
+        background: #fff;
+        text-align: center;
+      }
+
+      .common {
+
+        a {
+          float: left;
+          padding: 0 7px;
+          border-right: 1px solid #dedcd5;
+          line-height: 16px;
+          color: #333;
+          text-decoration: none;
+          outline: 0;
+          .hover();
+
+          i {
+            float: left;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+          }
+        }
+
+        .qq i {
+          background: url(../img/sprite.png)-140px -108px no-repeat;
+        }
+
+        .weixin i {
+          background: url(../img/sprite.png)-90px -27px no-repeat;
+        }
+
+        .yfb i {
+          background: url(../img/sprite.png)-119px -108px no-repeat;
+        }
+
+        .weibo i {
+          background: url(../img/sprite.png) 0 -149px no-repeat;
+        }
+      }
+    }
+  }
+}
+
+// .scan-login {
+//   padding-top: 30px;
+//   text-align: center;
+//   position: relative;
+
+//   .scan-box {
+//     height: 156px;
+//     padding: 20px 34px 0;
+//     position: relative;
+//     margin-bottom: 17px;
+
+//     .qr-code {
+//       width: 141px;
+//       height: 141px;
+//       margin: 0 auto;
+//       transition: .3s all;
+//       position: relative;
+
+//       img {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//       }
+
+//     }
+//   }
+// }
+// }

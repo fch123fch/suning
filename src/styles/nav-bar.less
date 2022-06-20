@@ -1,0 +1,147 @@
+
+@sn-color: #ff6600;
+@font-color: #666;
+@sn-color-light: #ff8000;
+// 分类上面的 导航
+.nav-bar {
+  .nav-bar-po {
+    position: relative;
+  }
+
+  .nav-bar-left {
+    a {
+      position: absolute;
+      top: 0;
+      display: block;
+      background-color: @sn-color-light;
+      height: 38px;
+      width: 200px;
+      font-size: 13px;
+      color: #fff;
+      font-weight: bold;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+
+
+      i {
+        display: block;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: url(../img/sn-jinglingtu.png) -928px 0;
+      }
+
+      span {
+        position: absolute;
+        top: 10px;
+        left: 33px;
+      }
+    }
+
+  }
+
+  .nav-bar-mid {
+    margin-left: 200px;
+
+    .nav-bar-list {
+      width: 785px;
+      height: 38px;
+
+      >li:first-child {
+        padding: 0;
+      }
+
+      >li:nth-child(2) {
+        padding: 0 15px 0 10px;
+        position: relative;
+
+        .hot {
+          position: absolute;
+          display: inline-block;
+          height: 17px;
+          width: 14px;
+          left: 55px;
+          top: 0;
+          background: url(../img/sn-jinglingtu.png) !important;
+          background-position: -345px -213px !important;
+        }
+      }
+
+      >li:nth-child(5) {
+        position: relative;
+      }
+
+      >li:last-child {
+        padding: 0 15px 0 15px;
+      }
+
+      li {
+        float: left;
+        height: 38px;
+        padding: 0 15px 0 10px;
+        text-align: center;
+        position: relative;
+
+        .new {
+          position: absolute;
+          display: inline-block;
+          height: 16px;
+          width: 16px;
+          left: 70px;
+          top: 2px;
+          background: url(../img/sn-jinglingtu.png) !important;
+          background-position: -19px 0 !important;
+        }
+        span {
+          position: absolute;
+          width: 25px;
+          height: 8px;
+          bottom: -8px;
+          left: 50%;
+          margin-left: -12px;
+          background: url(../img/sn-jinglingtu.png) -37px 0;
+          transition: all .5s;
+        }
+        &:hover span{
+         bottom: 0;
+        }
+        a {
+          display: inline-block;
+          font-size: 15px;
+          color: #333;
+          font-weight: bold;
+          line-height: 38px;
+
+          &:hover {
+            color: @sn-color;
+          }
+        
+         
+        }
+      }
+    }
+  }
+
+  .nav-bar-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    a {
+      img {
+        display: block;
+        width: 196px;
+        height: 39px;
+      }
+    }
+  }
+
+  .icon {
+    img {
+      width: 110px;
+      height: 38px;
+    }
+  }
+}

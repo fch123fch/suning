@@ -1,0 +1,272 @@
+.screen-banner {
+  width: 100%;
+  height: 476px;
+  position: relative;
+}
+.screen-banner .lbt {
+  height: 476px;
+}
+.screen-banner .lbt .swiper:hover .sbp-dis {
+  display: block;
+}
+.screen-banner .lbt .swiper-slide {
+  width: 794px;
+  height: 476px;
+  position: relative;
+}
+.screen-banner .lbt .swiper-slide img {
+  position: absolute;
+  width: 794px;
+  height: 476px;
+  top: 0px;
+  left: 316px;
+}
+.screen-banner .lbt .swiper-pagination {
+  bottom: 140px;
+  display: inline-block;
+  opacity: 0.8;
+  padding: 0 8px 0 0;
+  height: 6px;
+}
+.screen-banner .lbt .swiper-pagination-bullet {
+  position: relative;
+  display: inline-block;
+  margin-left: 8px;
+  width: 20px;
+  height: 4px;
+  background: rgba(255, 255, 255);
+  border-radius: 0;
+}
+.screen-banner .lbt .swiper-pagination-bullet-active {
+  background-color: #ff8800;
+}
+.screen-banner .lbt .swiper-button-prev {
+  position: absolute;
+  top: 220px;
+  left: 314px;
+  height: 72px;
+  background: url(../img/sn-jinglingtu.png);
+  background-position: -1152px 0;
+  color: transparent;
+  display: none;
+}
+.screen-banner .lbt .swiper-button-next {
+  position: absolute;
+  top: 220px;
+  right: 314px;
+  height: 72px;
+  color: transparent;
+  background: url(../img/sn-jinglingtu.png);
+  background-position: -1152px -72px;
+  display: none;
+}
+.screen-banner .nav-left {
+  width: 200px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 117px;
+  padding: 5px 0 6px 0;
+  z-index: 9;
+}
+.screen-banner .nav-left li {
+  position: relative;
+  width: 166px;
+  overflow: hidden;
+  padding: 0 6px 0 28px;
+  height: 31px;
+  line-height: 29px;
+}
+.screen-banner .nav-left li:hover {
+  background-color: #eee;
+}
+.screen-banner .nav-left li em {
+  font-size: 12px;
+  vertical-align: middle;
+  height: 12px;
+  width: 1px;
+}
+.screen-banner .nav-left .icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 6px;
+  top: 7px;
+}
+.screen-banner .nav-left a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.screen-banner .nav-left a:hover {
+  color: #ff6000;
+}
+.screen-banner .four-wrap {
+  height: 112px;
+  width: 786px;
+  position: absolute;
+  bottom: 10px;
+  left: 321px;
+  z-index: 100;
+}
+.screen-banner .four-wrap ul li {
+  float: left;
+  height: 112px;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.screen-banner .four-wrap ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.screen-banner .four-wrap ul li a:hover {
+  opacity: 0.8;
+}
+.screen-banner .four-wrap ul li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.screen-banner .nav-right {
+  width: 196px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  right: 116px;
+  z-index: 100;
+}
+.screen-banner .nav-right .top-box {
+  overflow: hidden;
+  position: relative;
+  width: 196px;
+  height: 225px;
+}
+.screen-banner .nav-right .top-box .sn-img {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 10px;
+  top: 10px;
+  background: url(../img/10001.png);
+  z-index: 1;
+  border: 1px solid #f7f7f7;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
+.screen-banner .nav-right .top-box .not-login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.screen-banner .nav-right .top-box .not-login:hover {
+  color: #ff6000;
+}
+.screen-banner .nav-right .top-box .not-login .new,
+.screen-banner .nav-right .top-box .not-login .super {
+  display: block;
+  width: 156px;
+  height: 24px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 24px;
+  margin-left: 20px;
+  font-size: 12px;
+}
+.screen-banner .nav-right .top-box .not-login .new {
+  color: #fff;
+  margin-top: 15px;
+  background: #ff8000;
+}
+.screen-banner .nav-right .top-box .not-login .super {
+  color: #fada99;
+  margin-top: 10px;
+  background-image: linear-gradient(-90deg, #373a77 3%, #17125b 100%);
+}
+.screen-banner .nav-right .top-box .not-login .not-login-content {
+  margin-top: 15px;
+  margin-left: 66px;
+  width: 125px;
+  height: 38px;
+  font-size: 12px;
+  color: #333;
+}
+.screen-banner .nav-right .top-box .not-login .not-login-content a {
+  color: #333;
+}
+.screen-banner .nav-right .top-box .not-login .not-login-content a:hover {
+  color: #ff8000;
+}
+.screen-banner .nav-right .top-box .not-login .not-login-content .hi {
+  width: 122px;
+  height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.screen-banner .nav-right .top-box .three {
+  width: 196px;
+  height: 85px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.screen-banner .nav-right .top-box .three a {
+  float: left;
+  width: 65px;
+  height: 85px;
+}
+.screen-banner .nav-right .top-box .three a:hover p {
+  color: #ff8000;
+}
+.screen-banner .nav-right .top-box .three a:hover img {
+  opacity: 0.8;
+}
+.screen-banner .nav-right .top-box .three a img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 6px auto;
+}
+.screen-banner .nav-right .top-box .three a p {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+.screen-banner .nav-right .bot-box ul li:nth-child(3n) {
+  border-right: 0;
+}
+.screen-banner .nav-right .bot-box ul li {
+  text-align: center;
+  float: left;
+  width: 64px;
+  height: 84px;
+  border: 1px solid #f2f2f2;
+  border-left: 0;
+  border-bottom: 0;
+}
+.screen-banner .nav-right .bot-box ul li:hover {
+  box-shadow: 3px 3px 3px #ccc;
+}
+.screen-banner .nav-right .bot-box ul li:hover p {
+  color: #ff8000;
+}
+.screen-banner .nav-right .bot-box ul li img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 12px 20px;
+}
+.screen-banner .nav-right .bot-box ul li p {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+}

@@ -1,0 +1,317 @@
+.hover() {
+  &:hover {
+    color: #ff6600;
+  }
+}
+
+.recommend {
+  background-color: #eee;
+  overflow: hidden;
+  .bot-0{
+   padding-bottom: 0!important;
+  }
+  .modules:nth-child(2n) {
+    margin-left: 6px;
+  }
+
+  .modules {
+    margin-top: 10px;
+    width: 590px;
+    height: 280px;
+    background-color: #fff;
+    // box-shadow: 3px 3px 3px #ccc;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 0 0 30px;
+    float: left;
+
+    .title {
+      height: 60px;
+      text-align: center;
+      font-size: 24px;
+      padding: 0 10px;
+      position: relative;
+
+      img {
+        display: block;
+        width: 106px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .goods-q {
+        border: 1px solid #ff3300;
+        color: #ff3300;
+        border-radius: 7px;
+        display: inline-block;
+        width: 82px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 14px;
+        position: absolute;
+        top: 10px;
+        left: 135px;
+      }
+
+      .more {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        font-size: 14px;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 12px;
+        margin-top: 20px;
+        font-weight: normal;
+        color: #999;
+        .hover();
+      }
+
+      .quan {
+        float: left;
+        height: 37px;
+        margin: 10px 0 0 16px;
+        overflow: hidden;
+        font-weight: bold;
+        .hover();
+        color: #000;
+      }
+
+      .q-quan {
+        margin-top: 5px;
+      }
+    }
+
+    ul {
+      li {
+        float: left;
+        width: 170px;
+        height: 238px;
+        margin-left: 20px;
+
+        span {
+          display: block;
+          color: #999;
+          font-size: 12px;
+        }
+
+        &:hover .goods {
+          opacity: 0.8;
+        }
+
+        &:hover p {
+          color: #ff6600;
+        }
+
+        .juhuijia {
+          float: left;
+          width: 54px;
+          height: 18px;
+          margin: 2px 5px 0 0;
+          border-radius: 0;
+          display: block;
+        }
+
+        .goods {
+          display: block;
+          width: 150px;
+          height: 150px;
+          margin: 0 10px 10px 10px;
+          border-radius: 6px;
+        }
+
+        p {
+          width: 170px;
+          height: 20px;
+          color: #333;
+          font-size: 14px;
+          line-height: 20px;
+          overflow: hidden;
+          text-align: left;
+          word-break: break-all;
+          font-weight: normal;
+        }
+
+        .new {
+          color: #ff3300;
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+        .new-price {
+          font-size: 18px;
+          color: #ff3300;
+          font-weight: bold;
+        }
+
+        .old-price {
+          font-size: 12px;
+          color: #999;
+          text-decoration: line-through;
+        }
+
+        .old {
+          color: #999;
+          font-size: 12px;
+          text-decoration: line-through;
+        }
+
+        .po-box {
+          position: relative;
+
+          .tuijian {
+            position: absolute;
+            width: 42px;
+            height: 44px;
+            left: 0;
+            top: 0;
+            z-index: 9;
+          }
+
+          .youhuiquan {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 0;
+            right: 0;
+            z-index: 9;
+          }
+
+          .bg-box {
+            position: absolute;
+            width: 168px;
+            height: 68px;
+            background: url(../img/quan3.png);
+            background-size: 100% 100%;
+          }
+
+          .text-1,
+          .text-2,
+          .text-3 {
+            position: absolute;
+            text-align: center;
+          }
+
+          .text-1 {
+            left: 0;
+            bottom: -35px;
+            height: 20px;
+            width: 140px;
+            color: #f30;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            text-align: center;
+            padding: 0 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .text-2 {
+            left: 0;
+            bottom: -50px;
+            height: 16px;
+            width: 140px;
+            color: #f30;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            padding-left: 15px;
+            overflow: hidden;
+          }
+
+          .text-3 {
+            display: block;
+            left: 48px;
+            bottom: -75px;
+            height: 20px;
+            width: 68px;
+            color: #fff;
+            background: #f50;
+            font-size: 12px;
+            border: 1px solid #f50;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 3px;
+            z-index: 2;
+          }
+
+
+        }
+
+      }
+    }
+
+    // 苏宁直播
+    .zb {
+      li {
+        position: relative;
+        float: left;
+        margin-left: 20px;
+        width: 170px;
+        height: 194px;
+        overflow: hidden;
+        border-radius: 6px;
+
+        &:hover p {
+          color: #fff;
+        }
+
+        &:hover .code {
+          display: block;
+        }
+
+        img {
+          display: block;
+          width: 160px;
+          height: 100%;
+          border-radius: 6px;
+          margin: 0 auto;
+        }
+
+        p {
+          position: absolute;
+          width: 160px;
+          height: 46px;
+          line-height: 66px;
+          left: 5px;
+          bottom: 0;
+          font-size: 14px;
+          color: #fff;
+          text-indent: 8px;
+          border-radius: 6px;
+        }
+
+        .code {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          display: none;
+
+          .code-img {
+            width: 120px;
+            height: 120px;
+            margin: 24px 27px 0px;
+          }
+
+          .code-text {
+            // float: none;
+            text-align: center;
+            font: 14px/20px 'Microsoft Yahei', tahoma, arial, 'Hiragino Sans GB';
+            color: #fff;
+          }
+        }
+      }
+    }
+    // 苏宁拼购
+    .goods-p{
+     width: 100px!important;
+    }
+  }
+}
