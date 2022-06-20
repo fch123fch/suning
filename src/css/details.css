@@ -265,6 +265,10 @@ footer .sn-footer-first .promise-box div a {
 footer .sn-footer-first .promise-box div a:hover {
   color: #ff6600;
 }
+footer .sn-footer-first .promise-box div a:hover {
+  color: #f60;
+  text-decoration: underline;
+}
 footer .sn-footer-first .promise-box div p {
   width: 120px;
   height: 24px;
@@ -311,6 +315,10 @@ footer .sn-footer-first .help-box dl dd a {
 }
 footer .sn-footer-first .help-box dl dd a:hover {
   color: #ff6600;
+}
+footer .sn-footer-first .help-box dl dd a:hover {
+  color: #f60;
+  text-decoration: underline;
 }
 footer .sn-footer {
   padding: 10px 0 0 ;
@@ -495,7 +503,6 @@ footer .sn-fix-nav {
 nav {
   background-color: #000;
   height: 40px;
-  margin-bottom: 200px;
 }
 nav .container {
   width: 950px;
@@ -539,6 +546,7 @@ nav .container dt .hover-box .list {
   top: 0px;
   left: 0;
   float: left;
+  z-index: 999;
 }
 nav .container dt .hover-box .list a {
   color: #fff;
@@ -577,4 +585,160 @@ nav .container .right > ul li {
 }
 nav .container .right > ul li a {
   color: #fff;
+}
+.category {
+  width: 100%;
+}
+.category .pos {
+  position: relative;
+}
+.category .category-left {
+  position: relative;
+  height: 20px;
+  padding: 10px 0;
+  line-height: 20px;
+  z-index: 10;
+  background: #f8f8f8;
+}
+.category .category-left .sep {
+  padding: 0 6px;
+  color: #bbb;
+  font-family: SimSun;
+  float: left;
+}
+.category .category-left a {
+  color: #666;
+  max-width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  font-size: 12px;
+}
+.category .category-left a:hover {
+  color: #ff6600;
+}
+.category .category-left a:hover {
+  color: #f60;
+  text-decoration: underline;
+}
+.category .category-left .dropdown {
+  position: relative;
+  float: left;
+  height: 18px;
+  border: 1px solid #ddd;
+  color: #666;
+  cursor: pointer;
+  background-color: #fff;
+}
+.category .category-left .dropdown .dropdown-text {
+  position: relative;
+  height: 18px;
+  padding: 0 20px 0 8px;
+  line-height: 18px;
+  z-index: 2;
+}
+.category .category-left .dropdown .dropdown-text a {
+  float: left;
+  color: #666;
+  max-width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.category .category-left .dropdown .dropdown-text a:hover {
+  color: #ff6600;
+}
+.category .category-left .dropdown .dropdown-text a:hover {
+  color: #f60;
+  text-decoration: underline;
+}
+.category .category-left .dropdown i {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  width: 8px;
+  height: 4px;
+  background-image: url(../img/f-icons-ex1.png);
+  background-position: -1638px -206px;
+  z-index: 3;
+  -moz-transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.1s ease-in;
+  -moz-transition: transform 0.1s ease-in;
+  -o-transition: transform 0.1s ease-in;
+  transition: transform 0.1s ease-in;
+  _font-size: 0;
+}
+.category .category-left .title {
+  color: #999;
+  float: left;
+}
+.category .category-left .title a {
+  color: #666;
+  max-width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+.category .category-right {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  height: 20px;
+  padding: 8px 0;
+  z-index: 10;
+  cursor: default;
+}
+.category .category-right .header-shop {
+  padding-right: 8px;
+  font-size: 0;
+}
+.category .category-right .header-shop .header-shop-label {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 11px;
+  margin-top: 3px;
+  background: #f60;
+  font-size: 10px;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 3px;
+  color: #fff;
+  border-radius: 2px;
+}
+.category .category-right .header-shop .header-shop-name {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 27px;
+  margin-top: 4px;
+  font-size: 12px;
+  height: 12px;
+  line-height: 12px;
+  color: #333;
+  max-width: 144px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.category .category-right .header-shop .header-shop-concat {
+  vertical-align: top;
+  height: 16px;
+  margin-top: 2px;
+  display: inline-block;
+  font-size: 0;
+}
+.category .category-right .header-shop .header-shop-concat span {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  color: #666;
+}
+.category .category-right .header-shop .header-shop-concat .header-shop-icon {
+  width: 16px;
+  margin-right: 1px;
+  background: url(../img/header-contact-self.gif) no-repeat;
 }
