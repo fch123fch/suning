@@ -25,12 +25,13 @@
 //     // },
 // })
 
-// $(function() {
-//     $('.out-box').on('mouseover', function(ev) {
-//         $($(ev.target).parent().next()).delay(200).slideDown(100);
-//         // console.log($(ev.target).parent().next());
-//     })
-//     $('.out-box').on('mouseout', function(ev) {
-//         $($(ev.target).parent().next()).delay(200).slideUp(100);
-//     })
-// })
+$(function() {
+    $('.hover-box').on('mouseenter', function() {
+        $(this).children('div').delay(100).show(100);
+        $(this).children('a').addClass('header-active-hover');
+    })
+    $('.hover-box').on('mouseleave', function() {
+        $(this).children('div').delay(100).hide(100);
+        $(this).children('a').removeClass('header-active-hover');
+    })
+})

@@ -1,22 +1,26 @@
 @sn-color: #ff6600;
 @font-color: #666;
 @sn-color-light: #ff8000;
+
 header {
   height: 36px;
   background-color: #F5F5F5;
 
   .header-left {
+    position: relative;
+
     &:hover {
       color: @sn-color-light;
     }
-    .address-icon{
+
+    .address-icon {
       float: left;
-    width: 12px;
-    height: 15px;
-    margin: 10px 6px 0 6px;
-    background: url(../img/sn-jinglingtu.png) -387px -183px;
+      width: 12px;
+      height: 15px;
+      margin: 10px 6px 0 6px;
+      background: url(../img/sn-jinglingtu.png) -387px -183px;
     }
-   
+
   }
 
   .header-left>a {
@@ -96,12 +100,12 @@ header {
   }
 
   // 下拉菜单
-  .header-active-hover:hover {
+  .header-active-hover {
     color: #ff6600 !important;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-bottom: 0;
-    box-sizing: border-box;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    border-bottom: 0 !important;
+    box-sizing: border-box !important;
   }
 
   // .header-active-hover:hover .content-hover{
@@ -113,7 +117,7 @@ header {
     background-color: #fff;
     width: 988px;
     padding: 20px 0;
-    left: 0;
+    // left: 0;
     left: auto;
     border: 1px solid #ccc;
     border-top: 0;
@@ -158,6 +162,62 @@ header {
           }
         }
       }
+    }
+  }
+
+  .sj-content {
+    width: 140px;
+    left: 70px;
+
+    .dl-list {
+      border: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .sj-content-3 {
+    left: 813px;
+  }
+
+  .sj-content-4 {
+    left: 742px;
+    width: 68px;
+
+    dd {
+      float: left;
+    }
+  }
+
+  .sj-content-5 {
+    display: block;
+    left: 683px;
+    width: 530px;
+    height: 120px;
+    display: none;
+
+    .dl-list {
+      width: 100%;
+      height: 120px;
+      border: 0;
+      padding-left: 10px;
+    }
+
+    dd {
+      width: 120px !important;
+      height: 120px !important;
+      float: left;
+      margin-right: 10px;
+
+      a {
+        width: 120px;
+        height: 120px;
+
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
     }
   }
 }

@@ -2,6 +2,9 @@ header {
   height: 36px;
   background-color: #F5F5F5;
 }
+header .header-left {
+  position: relative;
+}
 header .header-left:hover {
   color: #ff8000;
 }
@@ -71,12 +74,12 @@ header .header-mid > .login-l {
 header .header-active {
   color: #ff6600 !important;
 }
-header .header-active-hover:hover {
+header .header-active-hover {
   color: #ff6600 !important;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-bottom: 0;
-  box-sizing: border-box;
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-bottom: 0 !important;
+  box-sizing: border-box !important;
 }
 header .content-hover {
   position: absolute;
@@ -84,7 +87,6 @@ header .content-hover {
   background-color: #fff;
   width: 988px;
   padding: 20px 0;
-  left: 0;
   left: auto;
   border: 1px solid #ccc;
   border-top: 0;
@@ -121,6 +123,51 @@ header .content-hover .dl-list dd p a {
   position: relative;
   display: inline-block;
   font-size: 12px;
+}
+header .sj-content {
+  width: 140px;
+  left: 70px;
+}
+header .sj-content .dl-list {
+  border: 0;
+  padding-left: 10px;
+}
+header .sj-content-3 {
+  left: 813px;
+}
+header .sj-content-4 {
+  left: 742px;
+  width: 68px;
+}
+header .sj-content-4 dd {
+  float: left;
+}
+header .sj-content-5 {
+  display: block;
+  left: 683px;
+  width: 530px;
+  height: 120px;
+  display: none;
+}
+header .sj-content-5 .dl-list {
+  width: 100%;
+  height: 120px;
+  border: 0;
+  padding-left: 10px;
+}
+header .sj-content-5 dd {
+  width: 120px !important;
+  height: 120px !important;
+  float: left;
+  margin-right: 10px;
+}
+header .sj-content-5 dd a {
+  width: 120px;
+  height: 120px;
+}
+header .sj-content-5 dd a img {
+  width: 120px;
+  height: 120px;
 }
 .index-header .header-con {
   height: 100px;
