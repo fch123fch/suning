@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <div class="wrapper out-box">
+        <div class="wrapper wrapper-cart out-box">
             <div class="header-right">
                 <a href="./index.html"> <span>返回首页</span></a>
             </div>
@@ -362,6 +362,113 @@
                     </div>
                 </div>
             </div>
+            <div class="sh">
+                <div class="city-select">
+                    <span class="delivery-desc fl c6">送货至</span>
+                    <div class="city fl">
+                        <div class="ui-city">
+                            <a href="#" class="ui-city-toggle">
+                                <em class="address-placement"><span id="provinceName" class="pr hide" role="130,,,浙江">浙江</span><span id="citybName" class="ct" role="1000323,9315,01,杭州">杭州</span><span id="districtName" class="ds" role=",12499,01,上城区">上城区</span><span id="streetName" class="st" role=",5710199,99,全区">全区</span></em>
+                                <b class="arr"></b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="cart-bg">
+        <div class="wrapper-w">
+            <div class="m-cart-header">
+                <div class="cart-table-header">
+                    <div class="inner-box c6">
+                        <div class="th th-chk form th-chk-chkd">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" id="chooseAllCheckBox" class="J-AllCheckBox" name="icart1_goods_all01" aria-checked="false">
+                                <label for="chooseAllCheckBox" id="chooseAllCheckFrame1" role="checbox" aria-checked="false" title="全选购物车商品复选框" aria-label="全选购物车商品复选框"></label>
+                            </div>
+                            全选
+                        </div>
+                        <div class="th th-item">商品信息</div>
+                        <div class="th th-specs">规格</div>
+                        <div class="th th-price">单价（元）</div>
+                        <div class="th th-amount">数量</div>
+                        <div class="th th-sum">小计（元）</div>
+                        <div class="th th-op">操作</div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-cart-header m-cart-title">
+                <div class="cart-table-header">
+                    <div class="inner-box c6">
+                        <div class="th th-chk form th-chk-chkd">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" id="chooseAllCheckBox">
+                                <label for="chooseAllCheckBox" id="chooseAllCheckFrame1"></label>
+                            </div>
+                            <i class="lion-self-icon"></i> 苏宁自营
+                        </div>
+                        <div class="right">
+                            <span class="form1">运费:</span>
+                            <span class="form2">￥0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-cart-header cart-list">
+                <div class="cart-table-header">
+                    <div class="inner-box c6  inner-box-1">
+                        <div class="th th-chk form th-chk-chkd">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" id="chooseAllCheckBox">
+                                <label for="chooseAllCheckBox" id="chooseAllCheckFrame1"></label>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/10342.jpg" alt="">
+                            <a href=""><span>
+                                昕昕卫生间纸巾盒厕纸置物架厕所挂壁创意免打孔防水卫生纸抽
+                            </span></a>
+                        </div>
+                        <div class="th th-item th1"></div>
+                        <div class="th th-specs th1">颜色:单层【星空灰】</div>
+                        <div class="th th-price th1 ">￥9.9</div>
+                        <div class="th th-amount th1 ">
+                            <div class="color-chose ch-1">
+                                <a title="减1" role="button" href="javascript:void(0);" class="func minus minus-disable" name="item_12313025646_gmq_fuhao-"></a>
+                                <input id="buyNum" type="text" value="1" max="3" min="1">
+                                <a href="javascript:void(0);" title="加1" role="button" class="func plus" name="item_12313025646_gmq_fuhaojia"></a>
+                            </div>
+                        </div>
+                        <div class="th th-sum th1">￥9.9</div>
+                        <div class="th th-op th1 th2">
+                            <a href="">移入关注</a>
+                            <a href="">删除</a>
+                        </div>
+                        <!-- <div class="right">
+                            <span class="form1">运费:</span>
+                            <span class="form2">￥0.00</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="m-cart-header cart-js">
+                <div class="cart-table-header">
+                    <div class="inner-box c6 inner-box-2">
+                        <div class="th th-chk form th-chk-chkd mt">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" id="chooseAllCheckBox" class="J-AllCheckBox" name="icart1_goods_all01" aria-checked="false">
+                                <label for="chooseAllCheckBox" id="chooseAllCheckFrame1" role="checbox" aria-checked="false" title="全选购物车商品复选框" aria-label="全选购物车商品复选框"></label>
+                            </div>
+                            全选
+                        </div>
+                        <div class="del">
+                            删除选中的商品
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
@@ -436,16 +543,16 @@
 </body>
 <script src="./js/lib/jquery.min.js"></script>
 <script>
-    $(function() {
-        $('.hover-box').on('mouseenter', function() {
-            $(this).children('div').delay(100).show(100);
-            $(this).children('a').addClass('header-active-hover');
-        })
-        $('.hover-box').on('mouseleave', function() {
-            $(this).children('div').delay(100).hide(100);
-            $(this).children('a').removeClass('header-active-hover');
-        })
-    })
+    // $(function() {
+    //     $('.hover-box').on('mouseenter', function() {
+    //         $(this).children('div').delay(100).show(100);
+    //         $(this).children('a').addClass('header-active-hover');
+    //     })
+    //     $('.hover-box').on('mouseleave', function() {
+    //         $(this).children('div').delay(100).hide(100);
+    //         $(this).children('a').removeClass('header-active-hover');
+    //     })
+    // })
 </script>
 
 </html>
