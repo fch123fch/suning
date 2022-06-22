@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3467970 */
+  src: url('iconfont.woff2?t=1655883615526') format('woff2'),
+       url('iconfont.woff?t=1655883615526') format('woff'),
+       url('iconfont.ttf?t=1655883615526') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo1:before {
+  content: "\e62f";
+}
+
+.icon-3:before {
+  content: "\e61a";
+}
+
+.icon-jurassic_user:before {
+  content: "\e6a4";
+}
+
+.icon-caidan:before {
+  content: "\e630";
+}
+
+.icon-sousuo:before {
+  content: "\e600";
+}
+
+.icon-xinchebaojia:before {
+  content: "\e602";
+}
+
+.icon-shop-cart-:before {
+  content: "\e639";
+}
+
+.icon-Chevron-down:before {
+  content: "\e610";
+}
+
+.icon-Chevron-up:before {
+  content: "\e611";
+}
+
+.icon-xiangshangjiantou:before {
+  content: "\e65d";
+}
+
+.icon-xiangxiajiantou:before {
+  content: "\e65e";
+}
+

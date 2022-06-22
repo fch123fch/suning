@@ -431,7 +431,7 @@ nav {
 }
 
 .info {
-  margin-bottom: 500px;
+  margin-bottom: 400px;
 
   .content {
     margin-top: 10px;
@@ -1181,6 +1181,77 @@ nav {
           position: absolute;
           left: 220px;
           top: 0;
+        }
+      }
+    }
+  }
+}
+
+.detail-more {
+  overflow: hidden;
+
+  .procon {
+    width: 990px;
+    float: right;
+
+    .tabarea {
+      border: 1px solid #eee;
+      background: #fff;
+
+      .procon-toolbar {
+        height: 47px;
+        position: relative;
+
+        .tabarea-items {
+          background: #f7f7f7;
+
+          li {
+            float: left;
+
+            a {
+              height: 47px;
+              line-height: 47px;
+              padding: 0 25px;
+              float: left;
+              font-size: 14px;
+              color: #222;
+            }
+          }
+        }
+
+        .detail-tab {
+          height: 47px;
+
+          li.current a {
+            position: relative;
+            margin-top: -1px;
+            color: #f60;
+            border-top: 2px solid #f60;
+            background: #fff;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+      .procon-desc {
+        .container-desc {
+          background: #fff;
+          width: 788px;
+          float: left;
+
+          .productDetail {
+            padding: 18px;
+            overflow: hidden;
+
+            p {
+              a {
+                img {
+                  vertical-align: middle;
+                  max-width: 750px;
+                }
+              }
+            }
+          }
         }
       }
     }

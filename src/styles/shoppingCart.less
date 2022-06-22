@@ -266,16 +266,10 @@
             height: 20px;
           }
         }
-
-
-
         .color-chose {
           height: 38px;
-          margin-right: 20px;
-
           ul {
             height: 38px;
-
             li {
               height: 38px;
               position: relative;
@@ -327,9 +321,9 @@
           }
 
           .func {
-            width: 10px;
+            width: 20px;
             float: left;
-            height: 10px;
+            height: 30px;
           }
 
           .minus {
@@ -353,7 +347,14 @@
             background-image: url(../img/f-icons-ex1.png);
           }
         }
-
+        // .ch-2{
+        //   position: relative;
+        // }
+        // .ch-1{
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0px;
+        // }
       }
 
       .item {
@@ -406,20 +407,91 @@
       }
 
       .collect-sj {
+        position: relative;
         float: right;
         line-height: 22px;
         margin-right: 20px;
         cursor: pointer;
-        a{
+
+        .collect-sj-left {
+          position: absolute;
+          top: 15px;
+          left: -90px;
+        }
+
+        a {
           color: #333;
-          b{
+          font-size: 12px;
+
+          b {
             color: #f60;
           }
-          span{
+
+          span {
             display: inline-block;
-    width: 10px;
-    height: 12px;
-    background: url(images/lion-cart.png?v=c087885…) no-repeat;
+            width: 10px;
+            height: 12px;
+            background: url(https://res.suning.cn/project/ccf/css/images/lion-cart.png?v=c0878859d58b6406db003165ff81d198) no-repeat;
+            background-position: -11px -108px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .collect-sj-right {
+        float: right;
+        width: 300px;
+        position: relative;
+        border-left: 1px solid #ccc;
+        padding: 0 0 0 20px;
+        margin-top: 5px;
+
+        a {
+          position: absolute;
+          top: -5px;
+          left: 220px;
+          display: block;
+          width: 120px;
+          height: 60px;
+          font-size: 18px;
+          background-color: #f60;
+          color: #fff;
+          text-align: center;
+          line-height: 60px;
+          font-weight: bold;
+          float: right;
+        }
+
+        span {
+          font-size: 12px;
+        }
+
+        .zprice {
+          color: #333;
+        }
+
+        .yunfei {
+          color: #999;
+        }
+
+        p:first-child {
+          b {
+            font-size: 22px;
+
+            i {
+              font-size: 12px;
+              color: #f60;
+            }
+          }
+        }
+
+        p:last-child {
+          b {
+            font-size: 12px;
+
+            i {
+              font-size: 12px;
+            }
           }
         }
       }

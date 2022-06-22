@@ -1,4 +1,4 @@
-// import Swiper from 'swiper';
+// import Swiper from './lib/swiper-bundle.esm.browser.min';
 // import '../css/swiper-bundle.min.css'
 var mySwiper = new Swiper('.swiper', {
         direction: 'horizontal', // 垂直切换选项
@@ -17,7 +17,7 @@ var mySwiper = new Swiper('.swiper', {
             prevEl: '.swiper-button-prev',
         },
         autoplay: {
-            delay: 2000,
+            delay: 1500,
         },
         // 如果需要滚动条
         // scrollbar: {

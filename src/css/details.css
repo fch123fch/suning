@@ -795,7 +795,7 @@ nav .container .right > ul li a {
   background: url(../img/header-contact-self.gif) no-repeat;
 }
 .info {
-  margin-bottom: 500px;
+  margin-bottom: 400px;
 }
 .info .content {
   margin-top: 10px;
@@ -1431,4 +1431,57 @@ nav .container .right > ul li a {
   position: absolute;
   left: 220px;
   top: 0;
+}
+.detail-more {
+  overflow: hidden;
+}
+.detail-more .procon {
+  width: 990px;
+  float: right;
+}
+.detail-more .procon .tabarea {
+  border: 1px solid #eee;
+  background: #fff;
+}
+.detail-more .procon .tabarea .procon-toolbar {
+  height: 47px;
+  position: relative;
+}
+.detail-more .procon .tabarea .procon-toolbar .tabarea-items {
+  background: #f7f7f7;
+}
+.detail-more .procon .tabarea .procon-toolbar .tabarea-items li {
+  float: left;
+}
+.detail-more .procon .tabarea .procon-toolbar .tabarea-items li a {
+  height: 47px;
+  line-height: 47px;
+  padding: 0 25px;
+  float: left;
+  font-size: 14px;
+  color: #222;
+}
+.detail-more .procon .tabarea .procon-toolbar .detail-tab {
+  height: 47px;
+}
+.detail-more .procon .tabarea .procon-toolbar .detail-tab li.current a {
+  position: relative;
+  margin-top: -1px;
+  color: #f60;
+  border-top: 2px solid #f60;
+  background: #fff;
+  box-sizing: border-box;
+}
+.detail-more .procon .tabarea .procon-desc .container-desc {
+  background: #fff;
+  width: 788px;
+  float: left;
+}
+.detail-more .procon .tabarea .procon-desc .container-desc .productDetail {
+  padding: 18px;
+  overflow: hidden;
+}
+.detail-more .procon .tabarea .procon-desc .container-desc .productDetail p a img {
+  vertical-align: middle;
+  max-width: 750px;
 }
