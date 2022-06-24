@@ -29,3 +29,8 @@ $('.login-submit').on('click', function() {
             // location.href = './index.html';
         });
 })
+
+// 选项卡
+$('.login-tab>a').on('click', function() {
+    $(this).parents('.login-form').removeClass('display').siblings().addClass('display');
+})

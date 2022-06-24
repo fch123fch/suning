@@ -92,7 +92,7 @@ header .content-hover {
   left: auto;
   border: 1px solid #ccc;
   border-top: 0;
-  z-index: 10;
+  z-index: 11;
   display: none;
 }
 header .content-hover .dl-list {
@@ -479,6 +479,7 @@ footer .sn-fix-nav {
   position: absolute;
   top: 100px;
   left: 226px;
+  z-index: -1;
 }
 .index-header .sh .city-select .delivery-desc {
   margin-right: 7px;
@@ -569,11 +570,8 @@ footer .sn-fix-nav {
 .cart-bg .wrapper-w .m-cart-header .cart-table-header .inner-box .th-chk .cart-checkbox input {
   display: block;
   position: absolute;
-  top: -28px;
-  left: -38px;
   opacity: 1;
   z-index: 10;
-  border: 1px solid red;
 }
 .cart-bg .wrapper-w .m-cart-header .cart-table-header .inner-box .th {
   float: left;
@@ -860,6 +858,7 @@ footer .sn-fix-nav {
   width: 47px;
   position: relative;
   float: left;
+  z-index: 10;
 }
 .cart-bg .wrapper-w .item > .item-main > .td-chk > .cart-checkbox {
   float: left;
@@ -1037,6 +1036,9 @@ footer .sn-fix-nav {
   position: absolute;
   left: 790px;
   font-size: 12px;
+  color: #333;
+}
+.cart-bg .wrapper-w .item > .item-main > .td-item > .td-op a {
   color: #333;
 }
 .cart-bg .wrapper-w .toolbar {

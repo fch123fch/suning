@@ -93,7 +93,7 @@
     margin-top: 50px;
     background: #fff;
     right: 230px;
-
+    display: none;
     box-shadow: 0 0 2px #ececec;
 
     .login-tab {
@@ -103,8 +103,8 @@
       overflow: hidden;
       border-bottom: 1px solid #eee;
       margin-bottom: 40px;
-    
-
+      
+      
       a {
         position: relative;
         float: left;
@@ -134,12 +134,19 @@
     }
 
     .login-main {
+      img{
+        margin-left: 110px;
+        display: block;
+        width: 141px;
+        height: 141px;
+        margin-bottom: 36px;
+      }
       .username-login {
         // padding: 0 24px;
         position: relative;
         clear: both;
 
-        .username-box,
+        .username-box,  
         .password-box {
           padding: 0 24px;
           position: relative;
@@ -331,6 +338,19 @@
       }
     }
   }
+  .sm-login{
+    position: absolute;
+    top: 100px;
+    right: 230px;
+    // display: none;
+  }
+}
+
+.display{
+  display: block !important;
+}
+.active{
+  color: #f60 !important;
 }
 
 // .scan-login {

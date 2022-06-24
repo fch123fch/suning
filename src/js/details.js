@@ -25,12 +25,29 @@
    </p>`
      });
      $('.productDetail').html(template);
-     // 点击增加数量
-     //  $('.plus').on('click', function() {
-     //      console.log(1);
-     //      let count = $('#buyNum').val();
-     //      $('#buyNum').val(++count);
-     //  })
+     //  点击按钮增加或减少
+     $('.color-chose').on('click', '.plus', function(ev) {
+         // console.log($(ev.target).prevAll('.minus'));
+         console.log(ev.target);
+         $($(ev.target).prevAll('.minus')).css('cursor', 'pointer');
+         let count = $($(ev.target).prev()).val();
+         $($(ev.target).prev()).val(++count);
+         // console.log($('.price-now>em').text());
+         //  $('.sn-price>em').text($($(ev.target).prev()).val() * parseInt($('.price-now>em').text()))
+     });
+     $('.color-chose').on('click', '.minus', function(ev) {
+         // console.log($(ev.target).prev());
+         let count = $($(ev.target).next()).val();
+         if (count > 1) {
+             $($(ev.target).next()).val(--count);
+             //  $('.sn-price>em').text($($(ev.target).next()).val() * parseInt($('.price-now>em').text()))
+         } else {
+             // $(this).addClass('.disabled')
+             $(this).css('cursor', 'no-drop');
+             $(this).off();
+         }
+         // console.log($('.price-now>em').text());
+     })
      $('#add').on('click', function() {
          add(res.id, $('#buyNum').val());
      })

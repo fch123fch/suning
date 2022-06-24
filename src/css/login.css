@@ -245,6 +245,7 @@ footer .sn-fix-nav {
   margin-top: 50px;
   background: #fff;
   right: 230px;
+  display: none;
   box-shadow: 0 0 2px #ececec;
 }
 .main .login-form .login-tab {
@@ -284,6 +285,13 @@ footer .sn-fix-nav {
   bottom: -1px;
   left: 50%;
   margin-left: -35px;
+}
+.main .login-form .login-main img {
+  margin-left: 110px;
+  display: block;
+  width: 141px;
+  height: 141px;
+  margin-bottom: 36px;
 }
 .main .login-form .login-main .username-login {
   position: relative;
@@ -459,4 +467,15 @@ footer .sn-fix-nav {
 }
 .main .login-form .bind-login .common .weibo i {
   background: url(../img/sprite.png) 0 -149px no-repeat;
+}
+.main .sm-login {
+  position: absolute;
+  top: 100px;
+  right: 230px;
+}
+.display {
+  display: block !important;
+}
+.active {
+  color: #f60 !important;
 }
