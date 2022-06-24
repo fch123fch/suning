@@ -15,6 +15,9 @@ header .header-left .address-icon {
   margin: 10px 6px 0 6px;
   background: url(../img/sn-jinglingtu.png) -387px -183px;
 }
+header .iconfont {
+  font-size: 12px !important;
+}
 header .header-left > a {
   color: #666;
   font-size: 12px;
@@ -40,7 +43,7 @@ header .header-mid > a {
   display: inline-block;
   text-align: left;
   float: left;
-  margin-left: 160px;
+  margin-left: 155px;
   margin-right: 5px;
 }
 header .header-mid > a:hover {
@@ -79,7 +82,6 @@ header .header-active-hover {
   background-color: #fff !important;
   border: 1px solid #ccc !important;
   border-bottom: 0 !important;
-  box-sizing: border-box !important;
 }
 header .content-hover {
   position: absolute;
@@ -126,7 +128,7 @@ header .content-hover .dl-list dd p a {
 }
 header .sj-content {
   width: 140px;
-  left: 70px;
+  left: 86px;
 }
 header .sj-content .dl-list {
   border: 0;
@@ -135,16 +137,19 @@ header .sj-content .dl-list {
 header .sj-content-3 {
   left: 813px;
 }
+header .sj-content-2 {
+  left: 115px;
+}
 header .sj-content-4 {
-  left: 742px;
-  width: 68px;
+  left: 784px;
+  width: 83px;
 }
 header .sj-content-4 dd {
   float: left;
 }
 header .sj-content-5 {
   display: block;
-  left: 683px;
+  left: 772px;
   width: 530px;
   height: 120px;
   display: none;
@@ -216,7 +221,12 @@ header .sj-content-5 dd a img {
   border: 2px solid #ff8000;
   border-right: 0;
 }
-.index-header .header-search .input-search > span {
+.index-header .header-search .input-search > i {
+  position: relative;
+  top: -28px;
+  left: -20px;
+}
+.index-header .header-search .input-search > input {
   display: block;
   color: #bbb;
   font-size: 12px;
@@ -246,6 +256,7 @@ header .sj-content-5 dd a img {
   position: absolute;
   bottom: 7px;
   left: 55px;
+  z-index: 10;
 }
 .index-header .header-search .search-bottom-content .border-left {
   border-left: 1px solid #ccc;

@@ -9,17 +9,20 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/shoppingCart.css">
+    <link rel="stylesheet" href="./font_3467970_c1qcwc1k5b5/iconfont.css">
+    <script src="./js/shopCart.js" type="module"></script>
 </head>
 
 <body>
     <header>
-        <div class="wrapper wrapper-cart out-box">
-            <div class="header-right">
+        <div class="wrapper out-box wrapper-cart">
+            <div class="header-left">
                 <a href="./index.html"> <span>返回首页</span></a>
             </div>
             <div class="header-left hover-box">
                 <a href="#" class="js-hover">
                     <span>网站导航</span>
+                    <span class="iconfont icon-Chevron-down"></span>
                 </a>
                 <div class="content-hover">
                     <dl class="dl-list">
@@ -201,7 +204,9 @@
                 </div>
             </div>
             <div class="header-left hover-box">
-                <a href="#" class="js-hover"> <span>商家入驻</span></a>
+                <a href="#" class="js-hover">
+                    <span>商家入驻</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
                 <div class="content-hover sj-content">
                     <dl class="dl-list">
                         <dd>
@@ -232,7 +237,9 @@
                 </div>
             </div>
             <div class="header-left hover-box">
-                <a href="#" class="js-hover"> <span>客户服务</span></a>
+                <a href="#" class="js-hover"> <span>客户服务</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content sj-content-2">
                     <dl class="dl-list">
                         <dd>
@@ -267,10 +274,12 @@
             </div>
             <div class="header-mid">
                 <a href="./login.html" class="login"> 请登录</a>
-                <a href="./reg.html" class="header-active login-l"> 注册有礼</a>
+                <!-- <a href="./reg.html" class="header-active login-l"> 注册有礼</a> -->
             </div>
             <div class="header-right hover-box">
-                <a href="#" class="js-hover"> <span>我的订单</span></a>
+                <a href="#" class="js-hover"> <span>我的订单</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content sj-content-4">
                     <dl class="dl-list">
                         <dd>
@@ -285,13 +294,15 @@
                             <p><a href="">易通天下</a></p>
                         </dd>
                         <dd>
-                            <p><a href="">规则众议院</a></p>
+                            <p><a href="">规则众议</a></p>
                         </dd>
                     </dl>
                 </div>
             </div>
             <div class="header-right hover-box">
-                <a href="#" class="js-hover"> <span>我的易购</span></a>
+                <a href="#" class="js-hover"> <span>我的易购</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content sj-content-3">
                     <dl class="dl-list">
                         <dd>
@@ -324,6 +335,9 @@
             <div class="header-right">
                 <a href="#"> <span>苏宁会员</span></a>
             </div>
+            <!-- <div class="header-right">
+                <a href="./shoppingCart.html" class="header-active js-hover"> <span>购物车0</span></a>
+            </div> -->
             <div class="header-right">
                 <a href="#"> <span>易付宝</span></a>
             </div>
@@ -331,7 +345,9 @@
                 <a href="#"> <span>企业采购</span></a>
             </div>
             <div class="header-right hover-box">
-                <a href="#" class="js-hover"> <span>手机苏宁</span></a>
+                <a href="#" class="js-hover"> <span>手机苏宁</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content-5">
                     <dl class="dl-list">
                         <dd>
@@ -365,7 +381,7 @@
                         <div class="g-search">
                             <div class="input-search">
                                 <!-- <span>热水器精选</span> -->
-                                <input type="text" class="search-text" placeholder="输入关键字搜索商品/品牌/店铺">
+                                <input type="text" class="search-text " placeholder="输入关键字搜索商品/品牌/店铺">
                             </div>
                             <input type="submit" class="search-submit" value="搜索">
                         </div>
@@ -430,43 +446,62 @@
                     </div>
                 </div>
             </div>
-            <div class="m-cart-header cart-list">
-                <div class="cart-table-header">
-                    <div class="inner-box c6  inner-box-1">
-                        <div class="th th-chk form th-chk-chkd">
-                            <div class="cart-checkbox">
-                                <input type="checkbox" id="chooseAllCheckBox">
-                                <label for="chooseAllCheckBox" id="chooseAllCheckFrame1"></label>
-                            </div>
+            <div class="item">
+                <div class="item-main">
+                    <div class="td-chk">
+                        <div class="cart-checkbox">
+                            <input type="checkbox">
+                            <label for=""></label>
                         </div>
-                        <div class="item">
-                            <img src="./img/10342.jpg" alt="">
-                            <a href=""><span>
-                                    昕昕卫生间纸巾盒厕纸置物架厕所挂壁创意免打孔防水卫生纸抽
-                                </span></a>
-                        </div>
-                        <div class="th th-item th1"></div>
-                        <div class="th th-specs th1">颜色:单层【星空灰】</div>
-                        <div class="th th-price th1 ">￥9.9</div>
-                        <div class="th th-amount th1 ch-2">
-                            <div class="color-chose ch-1">
-                                <a title="减1" role="button" href="javascript:void(0);" class="func minus minus-disable" name="item_12313025646_gmq_fuhao-"></a>
-                                <input id="buyNum" type="text" value="1" max="3" min="1">
-                                <a href="javascript:void(0);" title="加1" role="button" class="func plus" name="item_12313025646_gmq_fuhaojia"></a>
-                            </div>
-                        </div>
-                        <div class="th th-sum th1">￥9.9</div>
-                        <div class="th th-op th1 th2">
-                            <a href="">移入关注</a>
-                            <a href="">删除</a>
-                        </div>
-                        <!-- <div class="right">
-                            <span class="form1">运费:</span>
-                            <span class="form2">￥0.00</span>
-                        </div> -->
                     </div>
+                    <div class="td-item">
+                        <div class="item-pic">
+
+                        </div>
+                        <div class="item-info">
+                            <a href="//product.suning.com/0000000000/12265545224.html" class="item-title">
+
+                            </a>
+                            <div class="item-service">
+                                <img class="lable-service-icon" src="https://image.suning.cn/uimg/MLS/label/162355120915257751776166.png" alt="">
+                            </div>
+                        </div>
+                        <div class="td-specs">
+                            <div class="specs-line">
+                                <p tabindex="0" title="型号颜色：小米手环6【NFC版】"></p>
+                            </div>
+                        </div>
+                        <div class="td-price">
+                            <div class="specs-line">
+                                <span class="price-now">
+                          <i></i><em></em>
+                        </span>
+                                <div class="price-line">
+                                    <!-- <span class="icon-promo-price"></span> -->
+                                </div>
+                            </div>
+                            <div class="td-amount">
+                                <div class="item-amount">
+                                    <a href="javascript:;" class="minus">-</a>
+                                    <input type="text" class="ui-text text-amount" max="100" min="1" value="1" maxlength="2">
+                                    <a href="javascript:;" class="plus">+</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="td-sum">
+                            <b class="sn-price">
+                        <i></i><em></em>
+                      </b>
+                        </div>
+                        <div class="td-op">
+                            <a href="#">移入关注</a>
+                            <a href="##">删除</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
             <div class="m-cart-header cart-js">
                 <div class="cart-table-header">
                     <div class="inner-box c6 inner-box-2">

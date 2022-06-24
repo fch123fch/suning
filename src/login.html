@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js" type="module"></script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
                 <div class="username-login">
                     <div class="username-box">
                         <div class="input-box">
-                            <input type="text" placeholder="用户名/手机/邮箱">
+                            <input type="text" placeholder="用户名/手机/邮箱" id="username" name="username">
                             <!-- <label>用户名/手机/邮箱</label> -->
                             <i class="icon username-icon"></i>
                             <i class="clear"></i>
@@ -62,7 +63,7 @@
                     </div>
                     <div class="password-box">
                         <div class="input-box">
-                            <input type="text" placeholder="密码">
+                            <input type="password" placeholder="密码" id="password" name="password">
                             <!-- <label>密码</label> -->
                             <i class="icon password-icon"></i>
                             <i class="clear"></i>
@@ -78,7 +79,7 @@
                 </div>
             </div>
             <div class="free-reg">
-                <a href="">注册 有惊喜></a>
+                <a href="./reg.html">注册 有惊喜></a>
             </div>
             <div class="bind-login">
                 <span class="title">

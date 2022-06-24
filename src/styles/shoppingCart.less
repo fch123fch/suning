@@ -22,7 +22,7 @@
     .search-text {
       width: 354px;
       display: block;
-      margin-top: 7px;
+      // margin-top: 7px;
     }
   }
 
@@ -118,8 +118,14 @@
       border-top: 2px solid #ccc;
 
       .cart-table-header {
+        .bigbox {
+          height: 100px;
+        }
+
         .inner-box {
-          height: 32px;
+          // height: 100%; 
+          // height: 32px;
+          overflow: hidden;
           border: 1px solid #ddd;
 
           .th-chk {
@@ -146,13 +152,17 @@
                 float: left;
                 cursor: pointer;
                 overflow: hidden;
+                display: none;
               }
 
               input {
+                display: block;
                 position: absolute;
                 top: -28px;
                 left: -38px;
-                opacity: 0;
+                opacity: 1;
+                z-index: 10;
+                 border: 1px solid red;
               }
             }
           }
@@ -185,6 +195,10 @@
 
           .th-count {
             width: 95px;
+          }
+
+          .th-amount {
+            width: 75px;
           }
 
           .th-sum {
@@ -248,7 +262,8 @@
       position: relative;
 
       .inner-box-1 {
-        height: 130px !important;
+        // height: 130px !important;
+        height: 100% !important;
 
         .th1 {
           margin-top: 25px;
@@ -266,10 +281,13 @@
             height: 20px;
           }
         }
+
         .color-chose {
           height: 38px;
+
           ul {
             height: 38px;
+
             li {
               height: 38px;
               position: relative;
@@ -347,6 +365,7 @@
             background-image: url(../img/f-icons-ex1.png);
           }
         }
+
         // .ch-2{
         //   position: relative;
         // }
@@ -493,6 +512,279 @@
               font-size: 12px;
             }
           }
+        }
+      }
+    }
+
+    .item {
+      // height: 134px;
+      width: 100%;
+      box-sizing: border-box;
+      // background: #f50;
+
+      position: relative;
+      margin-bottom: -1px;
+      padding: 15px 20px;
+      border: 1px solid #dfdfdf;
+
+      >.item-main {
+        >.td-chk {
+          height: 94px;
+          width: 47px;
+          position: relative;
+          float: left;
+
+          >.cart-checkbox {
+            float: left;
+            width: 15px;
+            height: 17px;
+            margin-left: 15px;
+            overflow: hidden;
+            display: inline;
+            vertical-align: middle;
+
+            input {
+              margin-right: 8px;
+              margin-top: 3px;
+            }
+
+            >label {
+              position: relative;
+              z-index: 2;
+              float: left;
+              cursor: pointer;
+              overflow: hidden;
+              width: 14px;
+              height: 14px;
+              background: url(https://res.suning.cn/project/ccf/css/images/lion-cart.png?v=c0878859d58b6406db003165ff81d198) 0 -20px;
+            }
+          }
+        }
+
+        >.td-item {
+          height: 94px;
+          width: 392px;
+          position: relative;
+
+          >.item-pic {
+            float: left;
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            background: #fff;
+            overflow: hidden;
+
+            >img {
+              display: block;
+              width: 80px;
+              height: 80px;
+              margin: -1px 0 0 -1px;
+            }
+          }
+
+          >.item-info {
+            width: 185px;
+            float: left;
+            line-height: 16px;
+
+            >a {
+              display: block;
+              clear: both;
+              margin-bottom: 2px;
+              max-height: 36px;
+              line-height: 18px;
+              color: #333;
+              word-break: break-all;
+              word-wrap: break-word;
+              overflow: hidden;
+              font-size: 12px;
+            }
+
+            >.item-remark {
+              position: absolute;
+              left: 160px;
+              bottom: 35px;
+            }
+          }
+
+          >.td-specs {
+            height: 94px;
+            position: absolute;
+            left: 368px;
+            width: 103px;
+
+            // background-color: #333;
+            >.specs-line {
+              .price-now {
+
+                i,
+                em {
+                  font-size: 12px;
+                }
+              }
+
+              position: relative;
+              z-index: 5;
+
+              >p {
+                color: #999;
+                font-size: 12px;
+                overflow: hidden;
+              }
+            }
+          }
+
+          >.td-price {
+            height: 94px;
+            position: absolute;
+            left: 525px;
+            width: 80px;
+
+            >.specs-line {
+              >.price-line {
+                >.icon-promo-price {
+                  padding: 2px 5px;
+                  margin: 2px 0 0;
+                  background: #fff6ef;
+                  border-radius: 2px;
+                  color: #f60;
+                  border: 1px solid #ffe2c9;
+                  line-height: 16px;
+                  text-align: center;
+                  display: inline-block;
+                  height: 16px;
+                  font-size: 12px;
+                }
+              }
+            }
+
+            >.td-amount {
+              height: 94px;
+              width: 177px;
+              position: absolute;
+              left: 50px;
+              top: 0px;
+              text-align: center;
+
+              >.item-amount {
+                width: 70px;
+                padding-left: 40px;
+                height: 22px;
+                overflow: hidden;
+                text-align: center;
+                padding-left: 52px;
+
+                >a {
+                  float: left;
+                  width: 22px;
+                  height: 22px;
+                  background-image: url(https://res.suning.cn/project/ccf/css/images/lion-cart.png?v=c0878859d58b6406db003165ff81d198);
+                  background-repeat: no-repeat;
+                  background-color: #f1f1f1;
+                  line-height: 100px;
+                  overflow: hidden;
+                }
+
+                >.minus {
+                  background-position: -87px -24px;
+                  // cursor: no-drop;
+                }
+
+                >input {
+                  height: 14px;
+                  float: left;
+                  width: 26px;
+                  padding: 3px 0;
+                  border-width: 1px 0;
+                  color: #666;
+                  transition: none;
+                  border: 1px solid #ccc;
+                  line-height: 14px;
+                  text-align: center;
+                }
+
+                >.plus {
+                  margin-right: -3px;
+                  background-position: -111px 0;
+                }
+              }
+            }
+          }
+
+          >.td-sum {
+            width: 80px;
+            text-align: right;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;
+            position: absolute;
+            left: 705px;
+            top: 3px;
+            font-size: 12px;
+
+            b {
+              font-weight: bold;
+
+              i {
+                font-family: Arial;
+              }
+
+              em {
+                margin-left: 1px;
+                font-family: tahoma;
+              }
+            }
+          }
+
+          >.td-op {
+            padding-left: 115px;
+            width: 58px;
+            padding-left: 53px;
+            text-align: left;
+            position: absolute;
+            left: 790px;
+            font-size: 12px;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .toolbar {
+      width: 1188px;
+      height: 58px;
+      background: #fff;
+      line-height: 58px;
+      border: 1px solid #ddd;
+      margin-top: 30px;
+
+      >.checkbox {
+        position: relative;
+        width: 50px;
+        height: 18px;
+        margin-top: 20px;
+        float: left;
+        margin: 0 10px 0;
+      }
+
+      >.del-selected {
+        color: #666;
+      }
+
+      >.right {
+        width: 420px;
+        height: 59px;
+        float: right;
+
+        >.collect {
+          width: 286px;
+          height: 51px;
+          float: left;
+        }
+
+        >.cart-total-price {
+          float: right;
+          line-height: 22px;
         }
       }
     }

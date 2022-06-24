@@ -1,4 +1,5 @@
 import $ from './lib/jquery.esm.js';
+// import $ from './lib/jquery.min.js';
 $(function() {
     $('.hover-box').on('mouseenter', function() {
         $(this).children('div').delay(100).show(100);
@@ -15,7 +16,7 @@ $(function() {
             url: "../interface/getIndex.php",
             dataType: "json",
         }).then(res => {
-            console.log(res);
+            // console.log(res);
             // console.log($('.tab-content>ul').children());
             // const arr = $('.tab-content>ul').children();
             // console.log(arr);
@@ -60,4 +61,29 @@ $(function() {
         .catch(xhr => {
             console.log(xhr.status);
         });
+    // })
+
+    // 苏宁左边楼梯   
+    $('.float-list>li>a').on('click', function() {
+        let target = $('#' + $(this).attr('data-id'));
+        // console.log(target);
+        let top = target.offset().top;
+        // console.log(top);
+        $('html,body').animate({
+            scrollTop: top
+        }, 600)
+
+    });
+    $(window).on('scroll', function() {
+        let scrollTop = $(document).scrollTop();
+        console.log(scrollTop);
+        if (scrollTop > 500) {
+            $('.floatbar').css('display', 'block');
+        } else {
+            $('.floatbar').css('display', 'none');
+        }
+        let index = Math.round((scrollTop - 200) / 1000);
+        $('.float-list>li').removeClass('on');
+        $('.float-list>li:eq(' + index + ')').addClass('on');
+    })
 })

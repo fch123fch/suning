@@ -17,12 +17,38 @@
 </head>
 
 <body>
+    <!-- 侧边导航 -->
+    <div class="border-side">
+        <div class="border-side-bg">
+
+        </div>
+    </div>
+    <!-- 左边楼梯特效 -->
+    <div class="f-floatbar">
+        <div class="floatbar">
+            <div class="float-bg">
+            </div>
+            <ul class="float-list">
+                <li><a href="javascript:;" data-id="seckill">限时秒杀</a></li>
+                <li><a href="javascript:;" data-id="lqzx">领券中心</a></li>
+                <li><a href="javascript:;" data-id="pdgc">频道广场</a></li>
+                <li><a href="javascript:;" data-id="guestlike">猜你喜欢</a></li>
+            </ul>
+            <a href="#" class="return">
+                <i></i>
+                <span>顶部</span>
+            </a>
+            <a href="#" class="return">
+                <span>暴恐举报</span>
+            </a>
+        </div>
+    </div>
     <header>
         <div class="wrapper out-box">
             <div class="header-left hover-box">
                 <a href="#" class="js-hover">
                     <span>网站导航</span>
-                    <span class="iconfont .icon-Chevron-down"></span>
+                    <span class="iconfont icon-Chevron-down"></span>
                 </a>
                 <div class="content-hover">
                     <dl class="dl-list">
@@ -206,7 +232,7 @@
             <div class="header-left hover-box">
                 <a href="#" class="js-hover">
                     <span>商家入驻</span>
-                    <span class="iconfont .icon-Chevron-down"></span></a>
+                    <span class="iconfont icon-Chevron-down"></span></a>
                 <div class="content-hover sj-content">
                     <dl class="dl-list">
                         <dd>
@@ -237,7 +263,9 @@
                 </div>
             </div>
             <div class="header-left hover-box">
-                <a href="#" class="js-hover"> <span>客户服务</span></a>
+                <a href="#" class="js-hover"> <span>客户服务</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content sj-content-2">
                     <dl class="dl-list">
                         <dd>
@@ -281,7 +309,9 @@
                 <a href="./reg.html" class="header-active login-l"> 注册有礼</a>
             </div>
             <div class="header-right hover-box">
-                <a href="#" class="js-hover"> <span>我的订单</span></a>
+                <a href="#" class="js-hover"> <span>我的订单</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content sj-content-4">
                     <dl class="dl-list">
                         <dd>
@@ -302,7 +332,9 @@
                 </div>
             </div>
             <div class="header-right hover-box">
-                <a href="#" class="js-hover"> <span>我的易购</span></a>
+                <a href="#" class="js-hover"> <span>我的易购</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content sj-content-3">
                     <dl class="dl-list">
                         <dd>
@@ -345,7 +377,9 @@
                 <a href="#"> <span>企业采购</span></a>
             </div>
             <div class="header-right hover-box">
-                <a href="#" class="js-hover"> <span>手机苏宁</span></a>
+                <a href="#" class="js-hover"> <span>手机苏宁</span>
+                    <span class="iconfont icon-Chevron-down"></span></a>
+                </a>
                 <div class="content-hover sj-content-5">
                     <dl class="dl-list">
                         <dd>
@@ -378,7 +412,8 @@
                     <div class="ng-search">
                         <div class="g-search">
                             <div class="input-search">
-                                <span>热水器精选</span>
+                                <input type="text" value="热水器精选">
+                                <i class="iconfont icon-sousuo1"></i>
                             </div>
                             <input type="submit" class="search-submit" value="搜索">
                         </div>
@@ -773,7 +808,7 @@
             </div>
         </div>
     </div>
-    <div class="recommend">
+    <div class="recommend" id="seckill">
         <div class="wrapper">
             <div class="recommend-modules">
                 <div class="modules">
@@ -864,7 +899,7 @@
                     </ul>
                 </div>
                 <!-- 领券中心 -->
-                <div class="modules">
+                <div class="modules" id="lqzx">
                     <div class="title">
                         <!-- <img src="./img/10377.png" class="title" alt=""> -->
                         <a href="#" class="quan">
@@ -1058,7 +1093,7 @@
             </div>
         </div>
     </div>
-    <div class="channel">
+    <div class="channel" id="pdgc">
         <div class="wrapper">
             <img src="./img/pindaoguangchang.png" class="title-pic" alt="">
             <!-- 频道模块 -->
@@ -1214,7 +1249,7 @@
             </div>
         </div>
     </div>
-    <div class="recommforyou">
+    <div class="recommforyou" id="guestlike">
         <div class="wrapper">
             <img src="./img/weinituijian.png" class="title-pic">
             <div class="tab-nav">

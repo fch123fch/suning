@@ -45,7 +45,12 @@
   border: 2px solid #ff8000;
   border-right: 0;
 }
-.index-header .header-search .input-search > span {
+.index-header .header-search .input-search > i {
+  position: relative;
+  top: -28px;
+  left: -20px;
+}
+.index-header .header-search .input-search > input {
   display: block;
   color: #bbb;
   font-size: 12px;
@@ -75,6 +80,7 @@
   position: absolute;
   bottom: 7px;
   left: 55px;
+  z-index: 10;
 }
 .index-header .header-search .search-bottom-content .border-left {
   border-left: 1px solid #ccc;
