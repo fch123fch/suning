@@ -14,7 +14,7 @@ $res = $conn->query($sql);
 
 if($res->num_rows>0){
   // echo '<script>alert("登录成功");</script>';
-  // // echo json_encode($res);
+// // echo json_encode($res);
   echo json_encode('登录成功');
 }else{
   echo '<script>alert("登录失败");</script>';

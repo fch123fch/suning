@@ -1630,3 +1630,239 @@ footer .sn-fix-nav {
   height: 100%;
   display: block;
 }
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000090;
+  width: 35px;
+  height: 100%;
+  background-color: #383838;
+  font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+}
+.sidebar .top {
+  height: 220px;
+  border-bottom: 1px solid #4d4d4d;
+  position: relative;
+}
+.sidebar .top .user {
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  bottom: 5px;
+}
+.sidebar .top .user .icon {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  z-index: 2;
+  background-color: #383838;
+  cursor: pointer;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/public/base/css/images-sidebar/sidebaricon.png?v=2021090901) no-repeat;
+  background-position: 0 0;
+}
+.sidebar .shopping .middle {
+  height: 115px;
+  width: 35px;
+  border-bottom: 1px solid #4d4d4d;
+  text-align: center;
+}
+.sidebar .shopping .middle .icon1 {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 30px;
+  z-index: 2;
+  background-color: #383838;
+  cursor: pointer;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/public/base/css/images-sidebar/sidebaricon.png?v=2021090901);
+  background-position: 0 -210px !important;
+}
+.sidebar .shopping .middle .span1 {
+  height: 54px;
+  text-align: center;
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+  color: #fff;
+}
+.sidebar .shopping .middle .span2 {
+  display: inline-block;
+  min-width: 17px;
+  height: 15px;
+  padding: 0 2px;
+  background-color: #d00;
+  color: #fff;
+  line-height: 15px;
+  border-radius: 5px;
+}
+.sidebar .bottom {
+  height: 100%;
+}
+.sidebar .bottom .bottom-1 {
+  height: 90px;
+}
+.sidebar .bottom .bottom-1 .icon {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  z-index: 2;
+  background-color: #383838;
+  cursor: pointer;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/public/base/css/images-sidebar/sidebaricon.png?v=2021090901) no-repeat;
+  background-position: 0 -23px;
+}
+.sidebar .bottom .bottom-2 {
+  height: 140px;
+}
+.sidebar .bottom .bottom-2 .icon {
+  margin-bottom: 5px;
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  z-index: 2;
+  background-color: #383838;
+  cursor: pointer;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/public/base/css/images-sidebar/sidebaricon.png?v=2021090901);
+}
+.sidebar .bottom .bottom-2 .icon1 {
+  background-position: 0 -47px;
+}
+.sidebar .bottom .bottom-2 .icon2 {
+  background-position: 0 -70px;
+}
+.sidebar .bottom .bottom-2 .icon3 {
+  background-position: 0 -93px;
+}
+.sidebar .bottom .bottom-3 .icon {
+  margin-bottom: 7px;
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  z-index: 2;
+  background-color: #383838;
+  cursor: pointer;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/public/base/css/images-sidebar/sidebaricon.png?v=2021090901);
+}
+.sidebar .bottom .bottom-3 .icon1 {
+  background-position: 0 -117px;
+}
+.sidebar .bottom .bottom-3 .icon2 {
+  background-position: 0 -138px;
+}
+.sidebar .bottom .bottom-3 .icon3 {
+  background-position: 0 -163px;
+}
+.sidebar .bottom .bottom-3 .icon4 {
+  background-position: 0 -260px;
+}
+.border-side {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000090;
+  width: 35px;
+  height: 100%;
+  font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+}
+.border-side .border-side-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  width: 35px;
+  height: 100%;
+  background-color: #383838;
+}
+.border-side .border-side-tabs {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 30%;
+  height: 337px;
+  width: 35px;
+  background-color: #383838;
+}
+.border-side .border-side-tabs .border-side-tab {
+  position: relative;
+  width: 35px;
+  height: 30px;
+  font-family: 'Microsoft Yahei';
+  cursor: pointer;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+.border-side .border-side-tabs .border-side-tab-cart {
+  height: auto;
+  color: #fff;
+}
+.border-side .border-side-tabs .border-side-tab-cart a .tab-cart-tip-warp-box {
+  width: 29px;
+  padding: 0 3px;
+  background-color: #383838;
+}
+.border-side .border-side-tabs .border-side-tab-cart a .tab-cart-tip-warp-box .tab-cart-tip-warp {
+  padding: 3px 0 10px;
+  border: 1px solid #4d4d4d;
+  border-width: 1px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.border-side .border-side-tabs .border-side-tab-cart a .tab-cart-tip-warp-box .tab-cart-tip-warp .tab-icon {
+  width: 29px;
+  background-position: 0 -210px !important;
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  z-index: 2;
+  background-color: #383838;
+  cursor: pointer;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/public…e/css/images-sidebar/sidebaricon.png?v=2021090901) no-repeat;
+}
+.border-side .border-side-tabs .border-side-tab-cart a .tab-cart-tip-warp-box .tab-cart-tip-warp .tab-icon-tip {
+  -webkit-font-smoothing: antialiased;
+  font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+  font-family: 'Microsoft Yahei';
+  color: #333;
+  text-align: center;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background: url(https://res.suning.cn/project/cmsWeb/suning/public…e/css/images-sidebar/sidebaricon.png?v=2021090901) no-repeat;
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  width: 4px;
+  height: 8px;
+  background-position: 0 -245px;
+  cursor: pointer;
+  top: 50%;
+}
+.border-side .border-side-tabs .border-side-tab-cart a .tab-cart-tip-warp-box .tab-cart-tip-warp .tab-cart-tip {
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+  color: #fff;
+}
+.border-side .border-side-tabs .border-side-tab-cart a .tab-cart-tip-warp-box .tab-cart-tip-warp .tab-cart-num {
+  -webkit-font-smoothing: antialiased;
+  font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  display: inline-block;
+  min-width: 17px;
+  height: 15px;
+  padding: 0 2px;
+  background-color: #d00;
+  color: #fff;
+  line-height: 15px;
+  border-radius: 5px;
+}

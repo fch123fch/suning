@@ -28,7 +28,7 @@
      //  点击按钮增加或减少
      $('.color-chose').on('click', '.plus', function(ev) {
          // console.log($(ev.target).prevAll('.minus'));
-         console.log(ev.target);
+         //  console.log(ev.target);
          $($(ev.target).prevAll('.minus')).css('cursor', 'pointer');
          let count = $($(ev.target).prev()).val();
          $($(ev.target).prev()).val(++count);
@@ -49,7 +49,14 @@
          // console.log($('.price-now>em').text());
      })
      $('#add').on('click', function() {
-         add(res.id, $('#buyNum').val());
+             add(res.id, $('#buyNum').val());
+         })
+         //切换 选中状态
+     $('.thumbnail-list').on('click', 'li', function(ev) {
+         //  console.log($('.thumbnail-list>li'));
+         console.log($($(ev.target).parents('li')));
+         $($(ev.target).parents('li')).addClass('active').siblings().removeClass('active');
+         $($(ev.target).next('i')).addClass('active').parents('li').siblings().children('i').removeClass('active');
      })
  }).catch(xhr => {
      console.log(xhr.status);

@@ -1,6 +1,6 @@
 <?php
 
-  header('content-type:application/json;charset=utf-8');
+  header('content-type:text/html;charset=utf-8');
 
   // 获得数据库中的数据
   $mysql_conf = array(

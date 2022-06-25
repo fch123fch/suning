@@ -3,7 +3,7 @@ import cookie from './lib/cookie.js';
 
 let shop = cookie.get('shop');
 shop = JSON.parse(shop);
-console.log(shop);
+// console.log(shop);
 let idList = shop.map(el => el.id).join();
 
 $.ajax({
@@ -21,7 +21,7 @@ $.ajax({
             <div class="item-main">
             <div class="td-chk">
             <div class="cart-checkbox">
-                <input type="checkbox">
+                <input type="checkbox" class="check">
                 <label for=""></label>
             </div>
         </div>
@@ -77,30 +77,25 @@ $.ajax({
             })
             //  点击按钮增加或减少
         $('.item-main').on('click', '.plus', function(ev) {
-            // console.log($(ev.target).prevAll('.minus'));
             $($(ev.target).prevAll('.minus')).css('cursor', 'pointer');
             let count = $($(ev.target).prev()).val();
             $($(ev.target).prev()).val(++count);
-            // console.log($('.price-now>em').text());
-            $('.sn-price>em').text($($(ev.target).prev()).val() * parseInt($('.price-now>em').text()))
+            //小计价格
+            $(ev.target).parents('.td-price').next().find('em').text($($(ev.target).prev()).val() * parseInt($(ev.target).parents('.td-amount').prev().find('em').text()))
         });
         $('.item-main').on('click', '.minus', function(ev) {
-                // console.log($(ev.target).prev());
                 let count = $($(ev.target).next()).val();
                 if (count > 1) {
                     $($(ev.target).next()).val(--count);
-                    $('.sn-price>em').text($($(ev.target).next()).val() * parseInt($('.price-now>em').text()))
+                    $(ev.target).parents('.td-price').next().find('em').text($($(ev.target).next()).val() * parseInt($(ev.target).parents('.td-amount').prev().find('em').text()));
                 } else {
-                    // $(this).addClass('.disabled')
                     $(this).css('cursor', 'no-drop');
                     $(this).off();
                 }
-                // console.log($('.price-now>em').text());
             })
             //计算结算的总价
         let sum = 0;
         $('.cart-checkbox>input').on('click', function() {
-            // $('.collect-sj-right>p>b').text($('.sn-price>em').val());
             if ($(this).parents('.item-main').hasClass('select')) {
                 $(this).parents('.item-main').removeClass('select')
                 sum -= parseInt($(this).parents('.item-main').find('.sum').text());
@@ -108,6 +103,7 @@ $.ajax({
                 $(this).parents('.item-main').addClass('select');
                 sum += parseInt($(this).parents('.item-main').find('.sum').text());
             }
+            // 结算价格
             $($('.zprice').next()).text(sum)
         })
     }).catch(xhr => {
@@ -124,3 +120,19 @@ $('.hover-box').on('mouseleave', function() {
     $(this).children('div').delay(100).hide(100);
     $(this).children('a').removeClass('header-active-hover');
 })
+
+// 全选
+$('.AllCheckBox').on('click', function() {
+    $('.item').children().find('.check').prop('checked', $(this).prop('checked'));
+    $('.AllCheckBox').prop('checked', $(this).prop('checked'));
+});
+// 一个未选中 取消全选的勾选状态
+$('.item').on('click', '.check', function() {
+    $('.AllCheckBox').prop('checked', allCheck());
+})
+
+function allCheck() {
+    let items = $('.item').children().find('.check');
+    let res = Array.from(items);
+    return res.every(el => $(el).prop('checked'));
+}

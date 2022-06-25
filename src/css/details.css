@@ -1326,6 +1326,7 @@ nav .container .right > ul li a {
   margin-left: 5px;
   border: 1px solid #ccc;
   float: left;
+  cursor: pointer;
 }
 .info .content .content-right .price-info-promo .color-chose ul li img {
   width: 38px;
