@@ -1673,6 +1673,7 @@ footer .sn-fix-nav {
   position: relative;
   width: 28px;
   height: 30px;
+  left: 2px;
   z-index: 2;
   background-color: #383838;
   cursor: pointer;

@@ -461,7 +461,6 @@ footer .sn-fix-nav {
 .index-header .input-search .search-text {
   width: 354px;
   display: block;
-  margin-top: 10px;
 }
 .index-header .input-search .search-text::placeholder {
   font-size: 12px;
@@ -820,9 +819,46 @@ nav .container .right > ul li a {
   height: 532px;
 }
 .info .content .content-left .imgZoom > a {
+  position: relative;
   display: block;
   border: 1px solid #eee;
   width: 450px;
+}
+.info .content .content-left .imgZoom > a .glass {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: #ccc;
+  left: 0px;
+  top: 0px;
+  opacity: 0.7;
+  display: none;
+}
+.info .content .content-left .imgZoom > a .m {
+  width: 450px;
+  height: 450px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.info .content .content-left .imgZoom > a .big {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 0px;
+  left: 450px;
+  z-index: 10;
+}
+.info .content .content-left .imgZoom > a .big img {
+  transform: scale(2);
+  width: 450px;
+  height: 450px;
+  display: block;
+  position: absolute;
+  left: 225px;
+  top: 225px;
 }
 .info .content .content-left .imgZoom > a img {
   display: block;
