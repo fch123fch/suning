@@ -772,6 +772,7 @@ footer .sn-fix-nav {
   top: 23px;
   left: 100px;
   font-size: 12px;
+  cursor: pointer;
 }
 .cart-bg .wrapper-w .cart-js .collect-sj {
   position: relative;

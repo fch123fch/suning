@@ -76,7 +76,7 @@ $(function() {
     });
     $(window).on('scroll', function() {
         let scrollTop = $(document).scrollTop();
-        console.log(scrollTop);
+        // console.log(scrollTop);
         if (scrollTop > 500) {
             $('.floatbar').css('display', 'block');
         } else {

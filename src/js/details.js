@@ -148,15 +148,18 @@
          $('.glass').css('display', 'block');
          $(this).on('mousemove', function(ev) {
              //  ev.stopPropagation();
-             let offsetX = ev.offsetX;
-             let offsetY = ev.offsetY;
+             //  let offsetX = ev.offsetX;
+             //  let offsetY = ev.offsetY;
+             let x = ev.pageX - $(this).offset().left;
+             let y = ev.pageY - $(this).offset().top;
+
              let height = $('.glass').outerHeight();
              let width = $('.glass').outerWidth();
-             console.log($('.glass').innerWidth());
-             let left = offsetX - width / 2;
-             //  console.log(left);
-             let top = offsetY - height / 2;
-             //  console.log(top);
+
+             //  console.log($('.glass').innerWidth());
+             let left = x - width / 2;
+             let top = y - height / 2;
+
              let maxWidth = $('.small-img').outerWidth() - $('.glass').outerWidth();
              let maxHeight = $('.small-img').outerHeight() - $('.glass').outerHeight();
              //边界
@@ -169,8 +172,8 @@
              $('.glass').css('left', left + 'px');
              $('.glass').css('top', top + 'px');
 
-             let bleft = -2 * (left - 85);
-             let btop = -2 * (top - 85);
+             let bleft = -2 * left + 225;
+             let btop = -2 * top + 225;
 
              $('.big>img').css('left', bleft + 'px');
              $('.big>img').css('top', btop + 'px');

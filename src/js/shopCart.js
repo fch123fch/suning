@@ -202,7 +202,11 @@ $.ajax({
     })
 
 
-// 导航栏二级菜单下拉
+// 删除选中商品
+$('.del').on('click', function() {
+        $('.remove').trigger('click');
+    })
+    // 导航栏二级菜单下拉
 
 $('.hover-box').on('mouseenter', function() {
     $(this).children('div').delay(100).show(100);
